@@ -2,13 +2,15 @@ body {
     background-color: midnightblue;
     height: 1500px;
 }
-* {
-    border: 1px solid red;
-}
+
 #journey {
     position: absolute;
     left: 50%;
     top: 15%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+#playSnakeBTN {
+
 }
