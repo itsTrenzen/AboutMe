@@ -21,6 +21,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: #580ef6;
     border-radius: 20px;
   }
@@ -28,13 +29,15 @@ body {
   .Milestone h2 {
     font-size: 24px;
     color: #f7f7f7;
-    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
   
   .Milestone p {
     font-size: 16px;
     color: #f7f7f7;
-    margin: 0;
+    margin-bottom: 15px;
+    margin-top: 0px;
   }
   
   /* Skills */
