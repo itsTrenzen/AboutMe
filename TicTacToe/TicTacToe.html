@@ -1,0 +1,62 @@
+<!DOCTYPE html >
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title">TicTacToe</title>
+    <title class="titleAdv">TicTacToe Advanced</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <h1 id="header1">TicTacToe</h1>
+    <nav>
+        <ul>
+            <li onclick="setMode('nor')">Normal</li>
+            <li onclick="setMode('adv')">Advanced</li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <section id="game">
+        <section id="players">
+            <h1 id="player1">Player 1</h1>
+            <div class="p1Area">  
+                <div class="item p1Item3_1" onclick="setMove('p1', 3.1)">3</div>
+                <div class="item p1Item2_1" onclick="setMove('p1', 2.1)">2</div>
+                <div class="item p1Item1_1" onclick="setMove('p1', 1.1)">1</div>
+                <div class="item p1Item3_2" onclick="setMove('p1', 3.2)">3</div>
+                <div class="item p1Item2_2" onclick="setMove('p1', 2.2)">2</div>
+                <div class="item p1Item1_2" onclick="setMove('p1', 1.2)">1</div>
+            </div>
+            <h1 id="player2">Player 2</h1>
+            <div class="p2Area">
+                <div class="item p2Item3_1" onclick="setMove('p2', 3.1)">3</div>
+                <div class="item p2Item2_1" onclick="setMove('p2', 2.1)">2</div>
+                <div class="item p2Item1_1" onclick="setMove('p2', 1.1)">1</div>
+                <div class="item p2Item3_2" onclick="setMove('p2', 3.2)">3</div>
+                <div class="item p2Item2_2" onclick="setMove('p2', 2.2)">2</div>
+                <div class="item p2Item1_2" onclick="setMove('p2', 1.2)">1</div>
+            </div>
+            <div class="statusBarP1"></div>
+            <div class="statusBarP2"></div>
+        </section>
+        <section class="gameBoard">       
+            <div class="tile" id="f1" onclick="colorTile('f1')"></div>
+            <div class="tile" id="f2" onclick="colorTile('f2')"></div>
+            <div class="tile" id="f3" onclick="colorTile('f3')"></div>
+
+            <div class="tile" id="f4" onclick="colorTile('f4')"></div>
+            <div class="tile" id="f5" onclick="colorTile('f5')"></div>
+            <div class="tile" id="f6" onclick="colorTile('f6')"></div>
+
+            <div class="tile" id="f7" onclick="colorTile('f7')"></div>
+            <div class="tile" id="f8" onclick="colorTile('f8')"></div>
+            <div class="tile" id="f9" onclick="colorTile('f9')"></div>    
+        </section>  
+        <button id="resetButton" onclick="reset()">Start new Game</button>
+    </section>
+    
+</body>
+<script src="script.js"></script>
+</html>
