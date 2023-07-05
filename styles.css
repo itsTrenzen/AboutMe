@@ -96,4 +96,8 @@ body {
   #projects button:hover {
     background-color: #1a1c22;
   }
-  
+  .HeaderProjekte {
+    position: absolute;
+    left: 20%;
+  }
+ 
