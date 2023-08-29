@@ -1,103 +1,18 @@
-/* styles.css */
-
-/* Body */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1c22;
-    color: #f7f7f7;
-  }
-  
-  /* Main Container */
-  #journey {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  /* Milestones */
-  .Milestone {
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #580ef6;
-    border-radius: 20px;
-  }
-  
-  .Milestone h2 {
-    font-size: 24px;
-    color: #f7f7f7;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  
-  .Milestone p {
-    font-size: 16px;
-    color: #f7f7f7;
-    margin-bottom: 15px;
-    margin-top: 0px;
-  }
-  
-  /* Skills */
-  #skills {
-    text-align: center;
-    padding: 20px;
-    background-color: #3d3a50;
-  }
-  
-  #skills ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  #skills li {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #580ef6;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #f7f7f7;
-  }
-  
-  /* Projects */
-  #projects {
-    text-align: center;
-    padding: 20px;
-    background-color: #3d3a50;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #projects h2 {
-    font-size: 24px;
-    color: #f7f7f7;
-  }
-  
-  #projects img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-  }
-  
-  #projects button {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #f7f7f7;
-    background-color: #580ef6;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #projects button:hover {
-    background-color: #1a1c22;
-  }
-  .HeaderProjekte {
-    position: absolute;
-    left: 20%;
-  }
- 
+}
+
+.button {
+    background-color: purple;
+    border: solid black 1px;
+    color: white;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 480px) {
+
+}
+@media screen and (min-width: 1024px) {
+
+}
