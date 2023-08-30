@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +7,79 @@
     <title>Mein Portfolio</title>
 </head>
 <body>
-    <h1>Meine Reise</h1>
-    <div class="skills">
-        <h2>Meine Fähigkeiten</h2>
-        <ul>
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>HTML/CSS</li>
-            <li>SQL</li>
+    <div class="sidebar">
+        <img class="myLogo" src="" alt="logo">
+        <ul class="sectionList">
+            <a href="#anchor1"><li>Über mich</li></a>
+            <a href="#anchor2"><li>Meine Reise</li></a>
+            <a href="#anchor3"><li>Fähigkeiten</li></a>
+            <a href="#anchor4"><li>Projekte</li></a>
+            <a href=""><li>Kontakt</li></a>
         </ul>
-    </div>
-    <div class="projects">
-        <h2>Projekte</h2>
-        
-        <div class="project1">
-            <h3>Snake</h3>
-            <img src="snake_logo.jpg">
-            <button >Spielen</button>
+        <div class="socials">
+            <img class="insta" src="" alt="Instagram: nick.bxt">
+            <img class="github" src="" alt="Github: itsTrenzen">
         </div>
     </div>
+    <div class="content">
+
+        <div id="anchor1"></div>
+        <div id="anchor2"></div>
+        <div id="anchor3"></div>
+        <div id="anchor4"></div>
+
+        <section class="aboutmeSection" id="aboutMe">
+            <h1>Hallo, ich bin &ltcoder id = "Nick"&gt</h1>  
+        </section>
+        <section class="journeySection">
+            <h1>Meine Reise</h1>
+            <div class="milestones">
+                <div class="milestone1">
+                    <h3>Inspiration</h3>
+                    <p>lorem ipsum</p>
+                </div>
+                <div class="milestone2">
+                    <h3>Die Anfänge</h3>
+                    <p>lorem ipsum</p>
+                </div>
+                <div class="milestone3">
+                    <h3>Praktikas</h3>
+                    <p>lorem ipsum</p>
+                </div>
+            </div>
+        </section>
+        <section class="skillsSection">
+            <div class="skills">
+                <h2>Meine Fähigkeiten</h2>
+                <ul>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>HTML/CSS</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </section>
+        <section class="projectsSection" id="projectSec">
+            <div class="projects">
+            <h2>Projekte</h2>
+                <div class="project1">
+                    <h3>Snake</h3>
+                    <img class="gameLogo" src="snake_logo.jpg">
+                    <button class="btnSnake" onclick="playSnake()">Spielen</button>
+                </div>
+                <div class="project2">
+                    <h3>TicTacToe</h3>
+                    <img class="gameLogo" src="TicTacToe_logo.jpg">
+                    <button class="btnTic" onclick="playTic()">Spielen</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    
     <script src="script.js"></script>
 </body>
+<footer>
+    <p>Impressum</p>
+</footer>
 </html>

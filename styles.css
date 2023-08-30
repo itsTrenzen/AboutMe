@@ -1,6 +1,13 @@
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     padding: 0;
+    background-color: #1a1c22; 
 }
 
 .button {
@@ -9,10 +16,92 @@ body {
     color: white;
     border-radius: 15px;
 }
-
-@media screen and (max-width: 480px) {
-
+.gameLogo {
+    width: 100px;
+    height: 100px;
 }
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    
+}
+/*Desktop*/
 @media screen and (min-width: 1024px) {
-
+    .sidebar {
+        position: fixed;
+        top: 0;
+        width: 20%;
+        height: 100%;
+        background-color: rgb(20, 20, 20); 
+        z-index: 1;      
+    }
+    .sidebar a {
+        text-decoration: none;
+        color: white;
+        position: relative;
+    }
+    .sidebar ul { 
+        list-style: none;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        margin: 0;
+        padding: 0;
+        transform: translate(-50%,-50%);
+        }
+    .sidebar li {
+        margin-bottom: 40%;
+    }
+    .sidebar li:hover {
+        background-color: purple;
+    }
+    .content {
+        position: absolute;
+        width: 80%;
+        height: 100%;
+        left: 20%;
+        margin-left: 5%;
+    }
+    /*About me*/
+    .aboutmeSection {
+        position: absolute;
+        top: 0%;
+    }
+    /*Journey*/
+    .journeySection {
+        position: absolute;
+        top: 100%;
+    }
+    /*Skills*/
+    .skillsSection {
+        position: absolute;
+        top: 200%;
+    }
+    /*Projects*/
+    .projectsSection {
+        position: absolute;
+        top: 300%;
+    }
+}
+/*anchors*/
+#anchor1 {
+    position: absolute;
+    top: 0%;
+}
+#anchor2 {
+    position: absolute;
+    top: 100%;
+}
+#anchor3 {
+    position: absolute;
+    top: 200%;
+}
+#anchor4 {
+    position: absolute;
+    top: 300%;
+}
+footer {
+    position: absolute;
+    top: 400%;
+    height: 5%;
+    background-color: rgb(20, 20, 20);
 }
