@@ -16,10 +16,10 @@
             <a href="#anchor4"><li>Projekte</li></a>
             <a href=""><li>Kontakt</li></a>
         </ul>
-        <div class="socials">
-            <img class="insta" src="" alt="Instagram: nick.bxt">
-            <img class="github" src="" alt="Github: itsTrenzen">
-        </div>
+        <ul class="socials">
+            <li><a href="https://www.instagram.com/nick.bxt/" target="_blank"><img class="socialLogo" class="insta" src="./insta.png" alt="Instagram: nick.bxt"></a></li>
+            <li><a href="https://github.com/itsTrenzen" target="_blank"><img class="socialLogo" class="github" src="./github.png" alt="Github: itsTrenzen"></a></li>
+        </ul>
     </div>
     <div class="content">
 
@@ -29,7 +29,9 @@
         <div id="anchor4"></div>
 
         <section class="aboutmeSection" id="aboutMe">
-            <h1>Hallo, ich bin &ltcoder id = "Nick"&gt</h1>  
+            <div class="titleBox">
+                <h1 class="myName">Hallo, <br>ich bin &ltcoder id = "Nick"&gt</h1>
+            </div>  
         </section>
         <section class="journeySection">
             <h1>Meine Reise</h1>
@@ -62,12 +64,12 @@
         <section class="projectsSection" id="projectSec">
             <div class="projects">
             <h2>Projekte</h2>
-                <div class="project1">
+                <div class="project" class="project1">
                     <h3>Snake</h3>
                     <img class="gameLogo" src="snake_logo.jpg">
                     <button class="btnSnake" onclick="playSnake()">Spielen</button>
                 </div>
-                <div class="project2">
+                <div class="project" class="project2">
                     <h3>TicTacToe</h3>
                     <img class="gameLogo" src="TicTacToe_logo.jpg">
                     <button class="btnTic" onclick="playTic()">Spielen</button>

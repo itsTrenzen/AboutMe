@@ -10,11 +10,22 @@ body {
     background-color: #1a1c22; 
 }
 
-.button {
-    background-color: purple;
+button {
+    background-color: rgb(60, 0, 140);
     border: solid black 1px;
     color: white;
-    border-radius: 15px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+}
+.btnSnake {
+    position: relative;
+    left: 50%;
+    bottom: 5%;
+}
+.btnTic {
+    position: relative;
+    left: 50%;
+    bottom: 5%;
 }
 .gameLogo {
     width: 100px;
@@ -26,60 +37,137 @@ body {
 }
 /*Desktop*/
 @media screen and (min-width: 1024px) {
+    
     .sidebar {
         position: fixed;
         top: 0;
-        width: 20%;
+        width: 10%;
         height: 100%;
         background-color: rgb(20, 20, 20); 
         z-index: 1;      
     }
-    .sidebar a {
+    .sectionList a {
         text-decoration: none;
         color: white;
         position: relative;
+        left: 50%;
     }
-    .sidebar ul { 
+    .sectionList { 
         list-style: none;
         position: absolute;
         top: 50%;
-        left: 30%;
+        left: 10%;
+        width: 100%;
         margin: 0;
         padding: 0;
         transform: translate(-50%,-50%);
         }
     .sidebar li {
-        margin-bottom: 40%;
+        margin: 10%;
     }
-    .sidebar li:hover {
-        background-color: purple;
+    .sectionList li:hover {
+        background-color: rgb(60, 0, 140);
+    }
+    .socials {
+        position: relative;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .socials li {
+        display: inline-block;
+    }
+    .socialLogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        transition: all 0.2s ease-in-out;
+    }
+    .socialLogo:hover {
+        transform: scale(1.1);
     }
     .content {
         position: absolute;
         width: 80%;
         height: 100%;
-        left: 20%;
+        left: 10%;
         margin-left: 5%;
     }
     /*About me*/
     .aboutmeSection {
         position: absolute;
         top: 0%;
+        left: 10%;
+        width: 100%;
+        height: 100%;
+    }
+    .titleBox {
+        position: relative;
+        top: 30%;
+        left: 20%;
+        width: 60%;
+        height: 15%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+    }
+    .myName {
+        position: relative;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%,-50%);
+        font-size: 90px;
+        
     }
     /*Journey*/
     .journeySection {
         position: absolute;
         top: 100%;
+        left: 10%;
+        width: 100%;
+        height: 100%;
     }
     /*Skills*/
     .skillsSection {
         position: absolute;
         top: 200%;
+        left: 10%;
+        width: 100%;
+        height: 100%;
     }
     /*Projects*/
     .projectsSection {
         position: absolute;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
         top: 300%;
+        left: 10%;
+        width: 100%;
+        height: 100%;
+    }
+    .project {
+        width: 100%;
+        height: 100%;
+        border: solid green;
+    }
+    .project h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+    }
+    .project img {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
     }
 }
 /*anchors*/
