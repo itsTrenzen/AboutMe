@@ -17,15 +17,14 @@ button {
     border-radius: 10px;
     transform: translate(-50%, -50%);
 }
-.btnSnake {
-    position: relative;
-    left: 50%;
-    bottom: 5%;
+button:hover {
+    transform: scale(1.1);
 }
-.btnTic {
-    position: relative;
-    left: 50%;
-    bottom: 5%;
+ul {
+    list-style-type: none;
+}
+ul li {
+    
 }
 .gameLogo {
     width: 100px;
@@ -97,6 +96,20 @@ button {
         left: 10%;
         margin-left: 5%;
     }
+    .headerBox {
+        position: relative;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        top: 10%;
+        left: 20%;
+        width: 100%;
+        height: 25%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+        font-size: 65px;
+    }
     /*About me*/
     .aboutmeSection {
         position: absolute;
@@ -144,30 +157,52 @@ button {
         position: absolute;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        grid-template-rows: repeat(3, 1fr);
         top: 300%;
         left: 10%;
         width: 100%;
         height: 100%;
     }
+    
     .project {
-        width: 100%;
-        height: 100%;
-        border: solid green;
+        position: relative;
+        width: 80%;
+        height: 90%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        margin: 30px;
+        top: 20%;
     }
     .project h3 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        position: absolute;
+        left: 50%;
+        top: 5%;
         font-size: 40px;
+        transform: translate(-50%,-50%);
     }
     .project img {
-        position: relative;
+        position: absolute;
         left: 50%;
-        top: 50%;
+        top: 40%;
         transform: translate(-50%,-50%);
+    }
+    .btnSnake {
+        position: absolute;
+        left: 50%;
+        bottom: 20%;
+        width: 80px;
+        height: 50px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btnTic {
+        position: absolute;
+        left: 50%;
+        bottom: 20%;
+        width: 80px;
+        height: 50px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
     }
 }
 /*anchors*/
