@@ -40,6 +40,7 @@ ul li {
     .sidebar {
         position: fixed;
         top: 0;
+        left: 0%;
         width: 10%;
         height: 100%;
         background-color: rgb(20, 20, 20); 
@@ -91,20 +92,20 @@ ul li {
     }
     .content {
         position: absolute;
-        width: 80%;
+        width: 90%;
         height: 100%;
         left: 10%;
-        margin-left: 5%;
+        margin-left: 0%;
     }
     .headerBox {
-        position: relative;
+        position: absolute;
         display: flex;
-        justify-content: left;
+        justify-content: center;
         align-items: center;
         top: 10%;
         left: 20%;
-        width: 100%;
-        height: 25%;
+        width: 35%;
+        height: 10%;
         background-color: rgb(60, 0, 140);
         border-radius: 10px;
         transform: translate(-50%,-50%);
@@ -139,39 +140,54 @@ ul li {
     /*Journey*/
     .journeySection {
         position: absolute;
+        display: grid;
         top: 100%;
-        left: 10%;
+        left: 0%;
         width: 100%;
         height: 100%;
+        border: solid green;
     }
     /*Skills*/
     .skillsSection {
         position: absolute;
+        display: grid;
         top: 200%;
-        left: 10%;
+        left: 0%;
         width: 100%;
         height: 100%;
+        border: solid green;
     }
     /*Projects*/
     .projectsSection {
         position: absolute;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
         top: 300%;
-        left: 10%;
+        left: 0%;
         width: 100%;
         height: 100%;
+        border: solid green;
     }
     
+    .projects {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 10px;
+        column-gap: 20px;
+        width: 45%;
+        height: 80%;
+        left: 40%;
+        top: 30%;
+    }
     .project {
         position: relative;
-        width: 80%;
-        height: 90%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%;
         background-color: rgb(60, 0, 140);
         border-radius: 10px;
-        margin: 30px;
-        top: 20%;
     }
     .project h3 {
         position: absolute;
@@ -196,6 +212,42 @@ ul li {
         transition: all 0.2s ease-in-out;
     }
     .btnTic {
+        position: absolute;
+        left: 50%;
+        bottom: 20%;
+        width: 80px;
+        height: 50px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn3 {
+        position: absolute;
+        left: 50%;
+        bottom: 20%;
+        width: 80px;
+        height: 50px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn4 {
+        position: absolute;
+        left: 50%;
+        bottom: 20%;
+        width: 80px;
+        height: 50px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn5 {
+        position: absolute;
+        left: 50%;
+        bottom: 20%;
+        width: 80px;
+        height: 50px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn6 {
         position: absolute;
         left: 50%;
         bottom: 20%;
