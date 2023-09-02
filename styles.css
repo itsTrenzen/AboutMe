@@ -15,7 +15,6 @@ button {
     border: solid black 1px;
     color: white;
     border-radius: 10px;
-    transform: translate(-50%, -50%);
 }
 button:hover {
     transform: scale(1.1);
@@ -145,7 +144,6 @@ ul li {
         left: 0%;
         width: 100%;
         height: 100%;
-        border: solid green;
     }
     /*Skills*/
     .skillsSection {
@@ -155,7 +153,6 @@ ul li {
         left: 0%;
         width: 100%;
         height: 100%;
-        border: solid green;
     }
     /*Projects*/
     .projectsSection {
@@ -164,7 +161,6 @@ ul li {
         left: 0%;
         width: 100%;
         height: 100%;
-        border: solid green;
     }
     
     .projects {
@@ -172,8 +168,8 @@ ul li {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        row-gap: 10px;
-        column-gap: 20px;
+        row-gap: 50px;
+        column-gap: 50px;
         width: 45%;
         height: 80%;
         left: 40%;
@@ -199,58 +195,55 @@ ul li {
     .project img {
         position: absolute;
         left: 50%;
-        top: 40%;
+        top: 50%;
         transform: translate(-50%,-50%);
     }
-    .btnSnake {
+    .container {
         position: absolute;
         left: 50%;
-        bottom: 20%;
+        bottom: 5%;
+        transform: translate(-50%,-50%);
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    .btnSnake {
+        position: relative;
         width: 80px;
         height: 50px;
         font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
     .btnTic {
-        position: absolute;
-        left: 50%;
-        bottom: 20%;
+        position: relative;
         width: 80px;
         height: 50px;
         font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
     .btn3 {
-        position: absolute;
-        left: 50%;
-        bottom: 20%;
+        position: relative;
         width: 80px;
         height: 50px;
         font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
     .btn4 {
-        position: absolute;
-        left: 50%;
-        bottom: 20%;
+        position: relative;
         width: 80px;
         height: 50px;
         font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
     .btn5 {
-        position: absolute;
-        left: 50%;
-        bottom: 20%;
+        position: relative;
         width: 80px;
         height: 50px;
         font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
     .btn6 {
-        position: absolute;
-        left: 50%;
-        bottom: 20%;
+        position: relative;
         width: 80px;
         height: 50px;
         font-size: 20px;
