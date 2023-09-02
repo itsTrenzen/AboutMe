@@ -145,6 +145,48 @@ ul li {
         width: 100%;
         height: 100%;
     }
+    .milestones {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 45%;
+        height: 70%;
+        left: 40%;
+        top: 30%;
+        border: solid green;
+    }
+    .milestone {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border: solid red;
+    }
+    .milestoneCircle {
+        position: absolute;
+        border-radius: 50%;
+        width: 80px;
+        height: 30px;
+        border: double blue;
+        background-color: cornflowerblue;
+        left: 30%;
+    }
+    .milestoneContent {
+
+    }
+    .circle1 {
+        position: absolute;
+        top: 10%;
+    }
+    .circle2 {
+        bottom: 10%;
+    }
+    .circle3 {
+        top: 10%;
+    }
+    .circle4 {
+        bottom: 10%;
+    }
     /*Skills*/
     .skillsSection {
         position: absolute;
