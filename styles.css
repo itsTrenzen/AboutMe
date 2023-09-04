@@ -145,18 +145,6 @@ ul li {
         width: 100%;
         height: 100%;
     }
-    .connection {
-        position: absolute;
-    }
-    .con1 {
-
-    }
-    .con2 {
-        
-    }
-    .con3 {
-        
-    }
     .milestones {
         position: absolute;
         display: grid;
@@ -166,12 +154,20 @@ ul li {
         height: 60%;
         left: 40%;
         top: 40%;
-        border: solid green;
     }
     .milestone {
         position: relative;
         width: 100%;
         height: 100%;
+    }
+    .milestone h3 {
+        position: absolute;
+        left: 58%;
+        font-size: 25px;
+        transform: translate(-50%,-50%);
+    }
+    .headerCircle {
+        bottom: 25%;
     }
     .milestoneCircle {
         position: absolute;
@@ -211,26 +207,14 @@ ul li {
     .circle1 {
         top: 20%;
     }
-    .circle1:hover .content1{
-        opacity: 100;
-    }
     .circle2 {
         bottom: 20%;
-    }
-    .circle2:hover .content2{
-        opacity: 100;
     }
     .circle3 {
         top: 20%;
     }
-    .circle3:hover .content3{
-        opacity: 100;
-    }
     .circle4 {
         bottom: 20%;
-    }
-    .circle4:hover .content4{
-        opacity: 100;
     }
     /*Skills*/
     .skillsSection {
