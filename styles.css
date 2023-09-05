@@ -141,6 +141,11 @@ ul {
         font-size: 90px;
         
     }
+    .myDesc {
+        position: absolute;
+        left: 0%;
+        top: 45%;
+    }
     /*Journey*/
     .journeySection {
         position: absolute;
