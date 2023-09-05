@@ -2,57 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <title>Portfolio</title>
 </head>
 <body>
-    <h4>Noch nicht fertig</h4>
-    <div id="journey">
-        <h1>Meine Reise</h1>
-        <div class="Milestone" id="firstMilestone">
-            <h2>Erste Auseinandersetzung</h2>
-            <p>Mein Onkel und mein Vater sind beide Software-Entwickler. 
-            </br>Daher wurde ich durch sie seit ich ca 12 Jahre alt war zum Programmieren inspiriert. Durch die Programmierbücher von meinem Dad, bekam ich einen ersten und faszinierenden Eindruck und war mir sicher, dass dies meine Zukunft werden würde.</p>
-        </div>
-        <div class="Milestone" id="secondMilestone">
-            <h2>Die Anfänge</h2>
-            <p>Zunächst habe ich gelegentlich etwas Java gelernt. Doch ab der 9. Klasse fing ich durch Scratch im Informatikunterricht an mir mehr an Logik beim Programmieren anzueignen.</p>
-        </div>
-        <div class="Milestone" id="thirdMilestone">
-            <h2>Praktikas</h2>
-            <p>Durch Praktikas in der 8. und 9. Klasse in einem Softwareunternehmen lernte ich zudem die Webentwicklung kennen.</p>
-        </div>
-        <div class="Milestone" id="fourthMilestone">
-            <h2>Oberstufenzeit</h2>
-            <p>In der 10. Klasse der Oberstufe begann die Vertiefung in Java und über die ganze Abiturzeit, 
-            </br>wo ich Informatik als Leistungskurs hatte, lernte ich mehr über Java. Programmieren bereitete mir immer mehr Freude und ich liebte es Probleme zu lösen.</p>
-        </div>
+    <h1 class="Header">Choose language</h1>
+    <div class="languages">
+        <button class="btnDE" onclick="redirect('de')">Deutsch</button>
+        <button class="btnEN" onclick="redirect('en')">English</button>
     </div>
-    <div id="skills">
-        <h1>Meine Fähigkeiten</h1>
-        <ul>
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>HTML/CSS</li>
-            <li>SQL</li>
-        </ul>
-    </div>
-    <div id="projects">
-        <h1 class="HeaderProjekte">Projekte</h1>
-            <div id="project1">
-                <h2>Snake-Game</h2>
-                <img src="snake_logo.jpg">
-                <button id="playSnakeBTN" onclick='playSnake()'>Play</button>
-            <div id="project2">
-                <h2>TicTacToe</h2>
-                <img src="TicTacToe_logo.jpg">
-                <button id="playTicBTN" onclick="playTic()">Play</button>
-            </div>
-    </div>
-   
+    <script src="script.js"></script>
 </body>
+<footer>Impressum</footer>
 </html>
