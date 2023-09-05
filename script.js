@@ -47,6 +47,10 @@ function appearContent(number) {
                 contentBox = document.querySelector(".content4");
                 contentBox.style.opacity = "100";
                 break;
+            case 5:
+                contentBox = document.querySelector(".content5");
+                contentBox.style.opacity = "100";
+                break;
             default:
                 break;
         }
@@ -72,6 +76,10 @@ function disappearContent(number) {
                 break;
             case 4:
                 contentBox = document.querySelector(".content4");
+                contentBox.style.opacity = "0";
+                break;
+            case 5:
+                contentBox = document.querySelector(".content5");
                 contentBox.style.opacity = "0";
                 break;
             default:
