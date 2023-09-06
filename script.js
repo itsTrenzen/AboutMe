@@ -1,4 +1,5 @@
-buildCon();
+let isSidebarOn = false;
+//buildCon();
 function redirect(lang) {
     if (lang === "de") window.open("./IndexDE.html");
     if (lang === "en") window.open("./IndexEN.html");
@@ -85,5 +86,15 @@ function disappearContent(number) {
             default:
                 break;
         }
+    }
+}
+function sidebarSlide() {
+    let sb = document.querySelector(".sidebar");
+    if (isSidebarOn) {
+        sb.style.left = "-100%";
+        isSidebarOn = false;
+    } else {
+        sb.style.left = "0%";
+        isSidebarOn = true;
     }
 }
