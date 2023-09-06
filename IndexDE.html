@@ -7,13 +7,19 @@
     <title>Mein Portfolio</title>
 </head>
 <body>
-    <div class="sidebarBTN" onclick="sidebarSlide()"></div>
+    <div class="sidebarBTN" onclick="sidebarSlide(); backgroundfx('sidebarBTN')">
+        <ul class="dots">
+            <div class="threeDots dot1"></div>
+            <div class="threeDots dot2"></div>
+            <div class="threeDots dot3"></div>
+        </ul>
+    </div>
     <div class="sidebar">
         <ul class="sectionList">
-            <a href="#anchor1"><li>Über mich</li></a>
-            <a href="#anchor2"><li>Meine Reise</li></a>
-            <a href="#anchor3"><li>Fähigkeiten</li></a>
-            <a href="#anchor4"><li>Projekte</li></a>
+            <a href="#anchor1" onclick="sidebarSlide()"><li>Über mich</li></a>
+            <a href="#anchor2" onclick="sidebarSlide()"><li>Meine Reise</li></a>
+            <a href="#anchor3" onclick="sidebarSlide()"><li>Fähigkeiten</li></a>
+            <a href="#anchor4" onclick="sidebarSlide()"><li>Projekte</li></a>
             <a href=""><li>Kontakt</li></a>
         </ul>
         <ul class="socials">

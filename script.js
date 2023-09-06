@@ -98,3 +98,8 @@ function sidebarSlide() {
         isSidebarOn = true;
     }
 }
+function backgroundfx(component) {
+    let element = document.querySelector("." + component);
+    element.style.backgroundColor = "black"
+    setTimeout(() => {element.style.backgroundColor = "transparent";}, 200);
+}
