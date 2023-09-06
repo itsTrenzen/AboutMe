@@ -23,8 +23,8 @@
             <a href=""><li>Kontakt</li></a>
         </ul>
         <ul class="socials">
-            <li><a href="https://www.instagram.com/nick.bxt/" target="_blank"><img class="socialLogo" class="insta" src="./insta.png" alt="Instagram: nick.bxt"></a></li>
-            <li><a href="https://github.com/itsTrenzen" target="_blank"><img class="socialLogo" class="github" src="./github.png" alt="Github: itsTrenzen"></a></li>
+            <li><a href="https://www.instagram.com/nick.bxt/" target="_blank"><img class="socialLogo insta" src="./insta.png" alt="Instagram: nick.bxt"></a></li>
+            <li><a href="https://github.com/itsTrenzen" target="_blank"><img class="socialLogo github" src="./github.png" alt="Github: itsTrenzen"></a></li>
         </ul>
     </div>
     <div class="content">
@@ -41,53 +41,67 @@
             <h2 class="myDesc">Frontend-/ Software-Entwickler</h2>
         </section>
         <section class="journeySection">
+            
             <div class="headerBox">
                 <h2>Meine Reise</h1>
             </div>
+            
+            <div class="contentBox">
+                <div class="milestoneContent content1">
+                    <div class="milestoneX mX1" onclick="disappearContent(1); backgroundfx('mX1')"></div>
+                    <p>Mein Onkel und mein Vater sind beide Software-Entwickler.
+                        Daher wurde ich durch sie seit ich ca. 12 Jahre alt war zum Programmieren inspiriert.</p>
+                </div>
+                <div class="milestoneContent content2">
+                    <div class="milestoneX mX2" onclick="disappearContent(2); backgroundfx('mX2')"></div>
+                    <p>Zunächst habe ich gelegentlich etwas Java gelernt. Doch ab der 9. Klasse fing ich 
+                        mit Scratch an mir mehr an Logik beim Programmieren anzueignen.</p>
+                </div>
+                <div class="milestoneContent content3">
+                    <div class="milestoneX mX3" onclick="disappearContent(3); backgroundfx('mX3')"></div>
+                    <p>Durch Praktikas in der 8. und 9. Klasse in einem Softwareunternehmen lernte ich zudem 
+                        die Webentwicklung kennen.</p>
+                </div>
+                <div class="milestoneContent content4">
+                    <div class="milestoneX mX4" onclick="disappearContent(4); backgroundfx('mX4')"></div>
+                    <p>Im Informatik-Leistungskurs der Oberstufe begann die Vertiefung in Java. 
+                        Programmieren wurde mehr interessanter und bei Problemen gab ich nicht auf.</p>
+                </div>
+                <div class="milestoneContent content5">
+                    <div class="milestoneX mX5" onclick="disappearContent(5); backgroundfx('mX5')"></div>
+                    <p>Noch im Prozess</p>
+                </div>
+            </div>
+
             <div class="milestones">
+                
                 <div class="milestone milestone1">
                     <h3>Inspiration</h3>
-                    <div class="milestoneCircle circle1" onmouseleave="disappearContent(1)" onclick="appearContent(1)">
-                        <div class="milestoneContent content1">
-                            <p>Mein Onkel und mein Vater sind beide Software-Entwickler.
-                                Daher wurde ich durch sie seit ich ca. 12 Jahre alt war zum Programmieren inspiriert.</p>
-                        </div>
+                        <div class="milestoneCircle circle1" onclick="appearContent(1)">
                     </div>
                 </div>
+                
                 <div class="milestone milestone2">
                     <h3 class="headerCircle">Die Anfänge</h3>
-                    <div class="milestoneCircle circle2" onmouseleave="disappearContent(2)" onclick="appearContent(2)">
-                        <div class="milestoneContent content2">
-                            <p>Zunächst habe ich gelegentlich etwas Java gelernt. Doch ab der 9. Klasse fing ich 
-                                mit Scratch im Informatikunterricht an mir mehr an Logik beim Programmieren anzueignen.</p>
-                        </div>
+                    <div class="milestoneCircle circle2" onclick="appearContent(2)">
                     </div>
                 </div>
+                
                 <div class="milestone" class="milestone3">
                     <h3>Praktikas</h3>
-                    <div class="milestoneCircle circle3" onmouseleave="disappearContent(3)" onclick="appearContent(3)">
-                        <div class="milestoneContent content3">
-                            <p>Durch Praktikas in der 8. und 9. Klasse in einem Softwareunternehmen lernte ich zudem 
-                                die Webentwicklung kennen.</p>
-                        </div>
+                    <div class="milestoneCircle circle3" onclick="appearContent(3)">
                     </div>
                 </div>
+                
                 <div class="milestone milestone4">
                     <h3 class="headerCircle">Oberstufe</h3>
-                    <div class="milestoneCircle circle4" onmouseleave="disappearContent(4)" onclick="appearContent(4)">
-                        <div class="milestoneContent content4">
-                            <p>In der Oberstufe begann die Vertiefung in Java und während der Abiturzeit
-                                lernte ich noch mehr über Java im Informatik-Leistungskurs. 
-                                Programmieren wurde mehr interessanter und bei Problemen gab ich nicht auf.</p>
-                        </div>
+                    <div class="milestoneCircle circle4" onclick="appearContent(4)">
                     </div>
                 </div>
+                
                 <div class="milestone milestone5">
                     <h3>Studium</h3>
-                    <div class="milestoneCircle circle5" onmouseleave="disappearContent(5)" onclick="appearContent(5)">
-                        <div class="milestoneContent content5">
-                            <p>Noch im Prozess</p>
-                        </div>
+                    <div class="milestoneCircle circle5" onclick="appearContent(5)">
                     </div>
                 </div>
             </div>

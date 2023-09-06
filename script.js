@@ -1,5 +1,6 @@
 let isSidebarOn = false;
-//buildCon();
+let prevContent = null;
+
 function redirect(lang) {
     if (lang === "de") window.open("./IndexDE.html");
     if (lang === "en") window.open("./IndexEN.html");
@@ -10,23 +11,6 @@ function playSnake() {
 function playTic() {
     window.open("/TicTacToe/TicTacToe.html");
 }
-
-function buildCon() {
-    let c1 = document.getElementsByClassName("circle1");
-    let c2 = document.getElementsByClassName("circle2");
-    let c3 = document.getElementsByClassName("circle3");
-    let c4 = document.getElementsByClassName("circle4");
-
-    let rect1 = c1.getBoundingClientRect();
-
-    let parent = document.getElementsByClassName("journeySection");
-    let bridge = document.createElement("div");
-    bridge.style.width = "500";
-    bridge.style.height = "5";
-    bridge.style.backgroundColor = "black"
-    
-    parent.appendChild(bridge);
-}
 function appearContent(number) {
     if (number >= 0) {
         let contentBox;
@@ -35,22 +19,50 @@ function appearContent(number) {
             case 1:
                 contentBox = document.querySelector(".content1");
                 contentBox.style.opacity = "100";
+                contentBox.style.zIndex = "1";
+                if (prevContent != null){
+                    prevContent.style.opacity = "0";
+                    prevContent.style.zIndex = "0";
+                }
+                prevContent = contentBox;
                 break;
             case 2: 
                 contentBox = document.querySelector(".content2");
                 contentBox.style.opacity = "100";
+                contentBox.style.zIndex = "1";
+                if (prevContent != null){
+                    prevContent.style.opacity = "0";
+                    prevContent.style.zIndex = "0";
+                }
+                prevContent = contentBox;
                 break;
             case 3:
                 contentBox = document.querySelector(".content3");
                 contentBox.style.opacity = "100";
+                contentBox.style.zIndex = "1";
+                if (prevContent != null){
+                    prevContent.style.opacity = "0";
+                    prevContent.style.zIndex = "0";
+                }
+                prevContent = contentBox;
                 break;
             case 4:
                 contentBox = document.querySelector(".content4");
                 contentBox.style.opacity = "100";
+                contentBox.style.zIndex = "1";
+                if (prevContent != null){
+                    prevContent.style.opacity = "0";
+                    prevContent.style.zIndex = "0";
+                }
+                prevContent = contentBox;
                 break;
             case 5:
                 contentBox = document.querySelector(".content5");
                 contentBox.style.opacity = "100";
+                contentBox.style.zIndex = "1";
+                prevContent.style.opacity = "0";
+                prevContent.style.zIndex = "0";
+                prevContent = contentBox;
                 break;
             default:
                 break;
@@ -101,5 +113,5 @@ function sidebarSlide() {
 function backgroundfx(component) {
     let element = document.querySelector("." + component);
     element.style.backgroundColor = "black"
-    setTimeout(() => {element.style.backgroundColor = "transparent";}, 200);
+    setTimeout(() => {element.style.backgroundColor = "transparent"}, 200);
 }
