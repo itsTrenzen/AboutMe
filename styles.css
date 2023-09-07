@@ -313,13 +313,13 @@ ul {
     .skills {
         position: absolute;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         row-gap: 50px;
         column-gap: 0px;
-        width: 90%;
-        height: 80%;
-        left: 5%;
+        width: 105%;
+        height: 70%;
+        left: -10%;
         top: 30%;
     }
     .skill {
@@ -327,8 +327,8 @@ ul {
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
-        width: 50%;
-        height: 50%;
+        width: 80%;
+        height: 80%;
         background-color: rgb(60, 0, 140);
         border-radius: 10px;
     }
@@ -336,16 +336,16 @@ ul {
         position: absolute;
         left: 50%;
         top: 5%;
-        font-size: 40px;
+        font-size: 30px;
         color: rgb(226, 226, 226);
         transform: translate(-50%,-50%);
     }
     .skillLogo {
         position: absolute;
         left: 50%;
-        top: 60%;
+        top: 70%;
         transform: translate(-50%,-50%);
-        height: 100px;
+        height: 60px;
     }
     /*Projects*/
     .projectsSection {
