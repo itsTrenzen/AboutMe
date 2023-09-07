@@ -210,7 +210,7 @@ ul {
     }
     .milestone h3 {
         position: absolute;
-        left: 80%;
+        left: 70%;
         font-size: 25px;
         color: rgb(226, 226, 226);
         transform: translate(-50%,-50%);
@@ -338,7 +338,7 @@ ul {
         position: absolute;
         left: 50%;
         top: 5%;
-        font-size: 30px;
+        font-size: 25px;
         color: rgb(226, 226, 226);
         transform: translate(-50%,-50%);
     }
@@ -426,6 +426,7 @@ ul {
         height: 40px;
         font-size: 20px;
         transition: all 0.2s ease-in-out;
+        
     }
     .btn4 {
         position: relative;
