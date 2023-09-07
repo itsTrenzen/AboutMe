@@ -585,6 +585,15 @@ ul {
         height: 100%;
         color: rgb(226, 226, 226);
     }
+    .contentBox {
+        position: absolute;
+        left: 25%;
+        top: 50%;
+        width: 40%;
+        height: 30%;
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+    }
     .milestones {
         position: absolute;
         display: grid;
@@ -626,9 +635,10 @@ ul {
     .milestoneContent {
         opacity: 0;
         position: absolute;
-        width: 300%;
-        height: 500%;
+        width: 100%;
+        height: 100%;
         left: 50%;
+        top: 50%;
         background-color: rgb(60, 0, 140);
         border-radius: 10px;
         display: flex;
@@ -636,21 +646,23 @@ ul {
         justify-content: center;
         text-align: center;
         transform: translate(-50%,-50%);
+        transition: all 0.3s;
+        z-index: 0;
+        font-size: 30px;
     }
-    .content1 {
-        bottom: 80%;
-    }
-    .content2 {
-        bottom: 30%;
-    }
-    .content3 {
-        bottom: 80%;
-    }
-    .content4 {
-        bottom: 30%;
-    }
-    .content5 {
-        bottom: 80%;
+    .milestoneX {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: transparent;
+        top: 5px;
+        right: 5px;
+        transition: all 0.1s;
+        z-index: 0;
+        font-size: 30px;
+        text-align: center;
+        cursor: pointer;
     }
     .circle1 {
         top: 20%;
