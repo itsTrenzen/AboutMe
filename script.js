@@ -7,7 +7,7 @@ function redirect(lang) {
     if (lang === 'en') window.location("./IndexEN.html");
 }
 function playSnake() {
-    window.open("/Snake-game/snake.html");
+    window.open("./Snake-game/index.html");
 }
 function playTic() {
     window.open("/TicTacToe/TicTacToe.html");
