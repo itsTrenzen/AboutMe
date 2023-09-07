@@ -101,13 +101,16 @@ function disappearContent(number) {
     }
 }
 function sidebarSlide() {
-    let sb = document.querySelector(".sidebar");
-    if (isSidebarOn) {
-        sb.style.left = "-100%";
-        isSidebarOn = false;
-    } else {
-        sb.style.left = "0%";
-        isSidebarOn = true;
+    if (window.innerWidth < 1024) {
+        let sb = document.querySelector(".sidebar");
+
+        if (isSidebarOn) {
+            sb.style.left = "-100%";
+            isSidebarOn = false;
+        } else {
+            sb.style.left = "0%";
+            isSidebarOn = true;
+        }
     }
 }
 function backgroundfx(component) {
