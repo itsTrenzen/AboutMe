@@ -2,6 +2,7 @@ html {
     scroll-behavior: smooth;
     max-width: 100%;
     overflow-x: hidden;
+    height: 420%;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
     padding: 0;
     background-color: #1a1c22;
     font-family: monospace; 
+    
 }
 
 button {
@@ -328,7 +330,7 @@ ul {
         top: 50%;
         transform: translate(-50%,-50%);
         width: 80%;
-        height: 80%;
+        height: 90%;
         background-color: rgb(60, 0, 140);
         border-radius: 10px;
     }
@@ -343,7 +345,7 @@ ul {
     .skillLogo {
         position: absolute;
         left: 50%;
-        top: 70%;
+        top: 65%;
         transform: translate(-50%,-50%);
         height: 60px;
     }
@@ -360,13 +362,13 @@ ul {
     .projects {
         position: absolute;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        row-gap: 50px;
-        column-gap: 50px;
-        width: 45%;
+        row-gap: 40px;
+        column-gap: 40px;
+        width: 90%;
         height: 80%;
-        left: 40%;
+        left: 0%;
         top: 30%;
     }
     .project {
@@ -382,21 +384,23 @@ ul {
     .project h3 {
         position: absolute;
         left: 50%;
-        top: 5%;
-        font-size: 40px;
+        top: 0%;
+        font-size: 25px;
         color: rgb(226, 226, 226);
         transform: translate(-50%,-50%);
     }
     .project img {
         position: absolute;
         left: 50%;
-        top: 50%;
+        top: 45%;
         transform: translate(-50%,-50%);
+        height: 90px;
+        width: 90px;
     }
     .container {
         position: absolute;
         left: 50%;
-        bottom: 5%;
+        bottom: -5%;
         transform: translate(-50%,-50%);
         display: flex; 
         justify-content: center;
@@ -405,42 +409,42 @@ ul {
     .btnSnake {
         position: relative;
         width: 80px;
-        height: 50px;
+        height: 40px;
         font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
     .btnTic {
         position: relative;
         width: 80px;
-        height: 50px;
+        height: 40px;
         font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
     .btn3 {
         position: relative;
         width: 80px;
-        height: 50px;
+        height: 40px;
         font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
     .btn4 {
         position: relative;
         width: 80px;
-        height: 50px;
+        height: 40px;
         font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
     .btn5 {
         position: relative;
         width: 80px;
-        height: 50px;
+        height: 40px;
         font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
     .btn6 {
         position: relative;
         width: 80px;
-        height: 50px;
+        height: 40px;
         font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
