@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My portfolio</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <div class="sidebarBTN" onclick="sidebarSlide(); backgroundfx('sidebarBTN')">
+        <ul class="dots">
+            <div class="threeDots dot1"></div>
+            <div class="threeDots dot2"></div>
+            <div class="threeDots dot3"></div>
+        </ul>
+    </div>
+    <div class="sidebar">
+        <ul class="sectionList">
+            <a href="#anchor1" onclick="sidebarSlide()"><li>About me</li></a>
+            <a href="#anchor2" onclick="sidebarSlide()"><li>My journey</li></a>
+            <a href="#anchor3" onclick="sidebarSlide()"><li>Skills</li></a>
+            <a href="#anchor4" onclick="sidebarSlide()"><li>Projects</li></a>
+            <a href="./Index.html" onclick="sidebarSlide()"><li class="lang">Language</li></a>
+        </ul>
+        <ul class="socials">
+            <li><a href="https://www.instagram.com/nick.bxt/" target="_blank"><img class="socialLogo insta" src="./insta.png" alt="Instagram: nick.bxt"></a></li>
+            <li><a href="https://github.com/itsTrenzen" target="_blank"><img class="socialLogo github" src="./github.png" alt="Github: itsTrenzen"></a></li>
+        </ul>
+    </div>
+    <div class="content">
+
+        <div id="anchor1"></div>
+        <div id="anchor2"></div>
+        <div id="anchor3"></div>
+        <div id="anchor4"></div>
+
+        <section class="aboutmeSection" id="aboutMe">
+            <div class="titleBox">
+                <h1 class="myName">Hello, <br>I am &ltcoder id="Nick"&gt</h1>
+            </div>  
+            <h2 class="myDesc">Frontend-/ Software developer</h2>
+        </section>
+        <section class="journeySection">
+            
+            <div class="headerBox">
+                <h2>My journey</h1>
+            </div>
+            
+            <div class="contentBox">
+                <div class="milestoneContent content1">
+                    <div class="milestoneX mX1" onclick="disappearContent(1); backgroundfx('mX1')">X</div>
+                    <p>Both my uncle and father are software developer.
+                        Therefore I got inspired by them to start coding since I was about 12 years old.
+                    </p>
+                </div>
+                <div class="milestoneContent content2">
+                    <div class="milestoneX mX2" onclick="disappearContent(2); backgroundfx('mX2')">X</div>
+                    <p> First I learned a bit Java. But since 9th grade I started to apply more logical thinking with Scratch.
+                    </p>
+                </div>
+                <div class="milestoneContent content3">
+                    <div class="milestoneX mX3" onclick="disappearContent(3); backgroundfx('mX3')">X</div>
+                    <p>I also learned about web development through internships in 8th and 9th grade at a software company.
+                    </p>
+                </div>
+                <div class="milestoneContent content4">
+                    <div class="milestoneX mX4" onclick="disappearContent(4); backgroundfx('mX4')">X</div>
+                    <p>In the advanced computer science course in high school, I started to deepen my knowledge of Java. 
+                        Programming became more interesting and I didn't give up when I had problems.
+                    </p>
+                </div>
+                <div class="milestoneContent content5">
+                    <div class="milestoneX mX5" onclick="disappearContent(5); backgroundfx('mX5')">X</div>
+                    <p>Still attending</p>
+                </div>
+            </div>
+
+            <div class="milestones">
+                
+                <div class="milestone milestone1">
+                    <h3>Inspiration</h3>
+                        <div class="milestoneCircle circle1" onclick="appearContent(1)">
+                    </div>
+                </div>
+                
+                <div class="milestone milestone2">
+                    <h3 class="headerCircle">The beginning</h3>
+                    <div class="milestoneCircle circle2" onclick="appearContent(2)">
+                    </div>
+                </div>
+                
+                <div class="milestone" class="milestone3">
+                    <h3>Internships</h3>
+                    <div class="milestoneCircle circle3" onclick="appearContent(3)">
+                    </div>
+                </div>
+                
+                <div class="milestone milestone4">
+                    <h3 class="headerCircle">High school</h3>
+                    <div class="milestoneCircle circle4" onclick="appearContent(4)">
+                    </div>
+                </div>
+                
+                <div class="milestone milestone5">
+                    <h3>Studium</h3>
+                    <div class="milestoneCircle circle5" onclick="appearContent(5)">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skillsSection">
+            <div class="headerBox">
+                <h2>Abilities</h2>
+            </div>
+            <div class="skills">
+                <div class="skill skill1">
+                    <h3>Java</h3>
+                    <img class="skillLogo" src="./java.png">
+                </div>
+                <div class="skill skill2">
+                    <h3>JavaScript</h3>
+                    <img class="skillLogo" src="./javascript.png">
+                </div>
+                <div class="skill skill3">
+                    <h3>HTML/CSS</h3>
+                    <img class="skillLogo" src="html-css.png">
+                </div>
+                <div class="skill skill4">
+                    <h3>SQL</h3>
+                    <img class="skillLogo" src="./sql.png">
+                </div>
+            </div>
+        </section>
+        <section class="projectsSection" id="projectSec">
+            <div class="headerBox">
+                <h2>Projects</h2>
+            </div>
+            <div class="projects">
+                <div class="project project1">
+                    <h3>Snake</h3>
+                    <img class="gameLogo" src="snake_logo.jpg">
+                    <div class="container">
+                        <button class="btnSnake" onclick="playSnake()">Play</button>
+                    </div>
+                </div>
+                <div class="project project2">
+                    <h3>TicTacToe</h3>
+                    <img class="gameLogo" src="TicTacToe_logo.jpg">
+                    <div class="container">
+                        <button class="btnTic" onclick="playTic()">Play</button>
+                    </div>
+                </div>
+                <div class="project project3">
+                    <h3>Project 3</h3>
+                    <img class="gameLogo" src="./questionmark.png">
+                    <div class="container">
+                        <button disabled class="btn3" onclick="" >Open</button>
+                    </div>
+                </div>
+                <div class="project project4">
+                    <h3>Project 4</h3>
+                    <img class="gameLogo" src="./questionmark.png">
+                    <div class="container">
+                        <button disabled class="btn4" onclick="" >Open</button>
+                    </div>
+                </div>
+                <div class="project project5">
+                    <h3>Project 5</h3>
+                    <img class="gameLogo" src="./questionmark.png">
+                    <div class="container">
+                        <button disabled class="btn5" onclick="" >Open</button>
+                    </div>
+                </div>
+                <div class="project project6">
+                    <h3>Project 6</h3>
+                    <img class="gameLogo" src="./questionmark.png">
+                    <div class="container">
+                        <button disabled class="btn6" onclick="" >Open</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
