@@ -2,8 +2,9 @@ let isSidebarOn = false;
 let prevContent = null;
 
 function redirect(lang) {
-    if (lang === "de") window.open("./IndexDE.html");
-    if (lang === "en") window.open("./IndexEN.html");
+
+    if (lang === 'de') window.open("./IndexDE.html");
+    if (lang === 'en') window.location("./IndexEN.html");
 }
 function playSnake() {
     window.open("/Snake-game/snake.html");

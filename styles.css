@@ -4,7 +4,6 @@ html {
     overflow-x: hidden;
     height: 420%;
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -31,6 +30,55 @@ ul {
 }
 /*Mobile*/
 @media screen and (max-width: 480px) {
+
+    .headerLang {
+        color: rgb(226, 226, 226);
+        font-family: monospace;
+        font-size: 40px;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%,-50%);
+    }
+    .languages {
+        position: absolute;
+        width: 100%;
+        height: 25%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 30px;
+        font-family: monospace;
+    }
+    .btnDE {
+        position: absolute;
+        width: 40%;
+        height: 90%;
+        left: 25%;
+        transform: translate(-50%);
+        background-color: rgb(60, 0, 140);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        color: rgb(226, 226, 226);
+    }
+    .btnEN {
+        position: absolute;
+        width: 40%;
+        height: 90%;
+        left: 75%;
+        transform: translate(-50%);
+        background-color: rgb(60, 0, 140);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        color: rgb(226, 226, 226);
+    }
     .sidebarBTN {
         position: fixed;
         left: 30px;
@@ -105,6 +153,9 @@ ul {
     }
     .sectionList li:hover {
         background-color: rgb(60, 0, 140);
+    }
+    .lang {
+        margin-top: 50px;
     }
     .socials {
         position: relative;
@@ -470,6 +521,53 @@ ul {
 /*Desktop*/
 @media screen and (min-width: 1024px) {
     
+    .headerLang {
+        color: rgb(226, 226, 226);
+        font-family: monospace;
+        font-size: 50px;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%,-50%);
+    }
+    .languages {
+        position: absolute;
+        width: 100%;
+        height: 25%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 40px;
+        font-family: monospace;
+    }
+    .btnDE {
+        position: absolute;
+        width: 20%;
+        height: 100%;
+        left: 35%;
+        transform: translate(-50%);
+        background-color: rgb(60, 0, 140);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        color: rgb(226, 226, 226);
+    }
+    .btnEN {
+        position: absolute;
+        width: 20%;
+        height: 100%;
+        left: 65%;
+        transform: translate(-50%);
+        background-color: rgb(60, 0, 140);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        color: rgb(226, 226, 226);
+    }
     .sidebar {
         position: fixed;
         top: 0;
@@ -505,6 +603,9 @@ ul {
     .sectionList li:hover {
         background-color: rgb(60, 0, 140);
     }
+    .lang {
+        margin-top: 50px;
+    }
     .socials {
         position: relative;
         top: 90%;
@@ -528,6 +629,7 @@ ul {
     .socialLogo:hover {
         transform: scale(1.1);
     }
+    
     .content {
         position: absolute;
         width: 90%;
