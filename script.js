@@ -10,7 +10,7 @@ function playSnake() {
     window.open("./Snake-game/index.html");
 }
 function playTic() {
-    window.open("/TicTacToe/TicTacToe.html");
+    window.open("./TicTacToe/TicTacToe.html");
 }
 function appearContent(number) {
     if (number >= 0) {
