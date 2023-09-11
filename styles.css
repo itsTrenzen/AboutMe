@@ -29,7 +29,7 @@ ul {
     height: 100px;
 }
 /*Mobile*/
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
 
     .headerLang {
         color: rgb(226, 226, 226);
@@ -485,30 +485,14 @@ ul {
         transition: all 0.2s ease-in-out;
     }
 }
-/*anchors*/
-#anchor1 {
-    position: absolute;
-    top: 0%;
-}
-#anchor2 {
-    position: absolute;
-    top: 100%;
-}
-#anchor3 {
-    position: absolute;
-    top: 200%;
-}
-#anchor4 {
-    position: absolute;
-    top: 300%;
-}
-/*Desktop*/
-@media screen and (min-width: 1024px) {
-    
+
+@media screen and (min-width: 414px) and (max-width: 479px) {
+
     .headerLang {
         color: rgb(226, 226, 226);
         font-family: monospace;
-        font-size: 50px;
+        font-size: 40px;
+        text-align: center;
         position: absolute;
         left: 50%;
         top: 25%;
@@ -521,14 +505,14 @@ ul {
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        font-size: 40px;
+        font-size: 30px;
         font-family: monospace;
     }
     .btnDE {
         position: absolute;
-        width: 20%;
-        height: 100%;
-        left: 35%;
+        width: 40%;
+        height: 90%;
+        left: 25%;
         transform: translate(-50%);
         background-color: rgb(60, 0, 140);
         display: flex;
@@ -540,9 +524,9 @@ ul {
     }
     .btnEN {
         position: absolute;
-        width: 20%;
-        height: 100%;
-        left: 65%;
+        width: 40%;
+        height: 90%;
+        left: 75%;
         transform: translate(-50%);
         background-color: rgb(60, 0, 140);
         display: flex;
@@ -552,14 +536,54 @@ ul {
         border-radius: 10px;
         color: rgb(226, 226, 226);
     }
+    .sidebarBTN {
+        position: fixed;
+        left: 30px;
+        top: 30px;
+        transform: translate(-50%,-50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: transparent;
+        z-index: 2;
+        transition: all 0.1;
+    }
+    .dots {
+        position: fixed;
+        z-index: 3;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 10px;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .threeDots {
+        background-color: rgb(226, 226, 226);
+        width: 30%;
+        height: 3px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .dot1 {
+        top: 25%;
+    }
+    .dot2 {
+        top: 50%;
+    }
+    .dot3 {
+        top: 75%;
+    }
     .sidebar {
         position: fixed;
         top: 0;
-        left: 0%;
-        width: 10%;
+        left: -100%;
+        width: 50%;
         height: 100%;
         background-color: rgb(20, 20, 20); 
-        z-index: 1;      
+        z-index: 1;
+        transition: all 0.3s;      
     }
     .sectionList a {
         text-decoration: none;
@@ -593,7 +617,7 @@ ul {
     .socials {
         position: relative;
         top: 90%;
-        left: 50%;
+        left: 40%;
         transform: translate(-50%,-50%);
     }
     .socials li {
@@ -613,7 +637,6 @@ ul {
     .socialLogo:hover {
         transform: scale(1.1);
     }
-    
     .content {
         position: absolute;
         width: 90%;
@@ -627,13 +650,13 @@ ul {
         justify-content: center;
         align-items: center;
         top: 10%;
-        left: 20%;
-        width: 30%;
+        left: 30%;
+        width: 80%;
         height: 10%;
         background-color: rgb(60, 0, 140);
         border-radius: 10px;
         transform: translate(-50%,-50%);
-        font-size: 65px;
+        font-size: 30px;
     }
     /*About me*/
     .aboutmeSection {
@@ -648,8 +671,8 @@ ul {
         position: relative;
         top: 30%;
         left: 20%;
-        width: 60%;
-        height: 15%;
+        width: 85%;
+        height: 10%;
         color: rgb(226, 226, 226);
         background-color: rgb(60, 0, 140);
         border-radius: 10px;
@@ -660,13 +683,13 @@ ul {
         top: 50%;
         left: 55%;
         transform: translate(-50%,-50%);
-        font-size: 90px;
+        font-size: 20px;
         
     }
     .myDesc {
         position: absolute;
-        left: 0%;
-        top: 45%;
+        left: -10%;
+        top: 40%;
     }
     /*Journey*/
     .journeySection {
@@ -678,23 +701,14 @@ ul {
         height: 100%;
         color: rgb(226, 226, 226);
     }
-    .contentBox {
-        position: absolute;
-        left: 25%;
-        top: 50%;
-        width: 40%;
-        height: 30%;
-        border-radius: 10px;
-        transform: translate(-50%,-50%);
-    }
     .milestones {
         position: absolute;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        width: 45%;
+        width: 100%;
         height: 60%;
-        left: 40%;
+        left: -10%;
         top: 40%;
     }
     .milestone {
@@ -704,10 +718,11 @@ ul {
     }
     .milestone h3 {
         position: absolute;
-        left: 58%;
+        left: 70%;
         font-size: 25px;
         color: rgb(226, 226, 226);
         transform: translate(-50%,-50%);
+        width: 100%;
     }
     .headerCircle {
         bottom: 25%;
@@ -725,6 +740,15 @@ ul {
     .milestoneCircle:hover {
         transform: scale(1.1);
     }
+    .contentBox {
+        position: absolute;
+        width: 60%;
+        height: 20%;
+        left: 45%;
+        top: 30%;
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+    }
     .milestoneContent {
         opacity: 0;
         position: absolute;
@@ -741,36 +765,34 @@ ul {
         transform: translate(-50%,-50%);
         transition: all 0.3s;
         z-index: 0;
-        font-size: 30px;
     }
     .milestoneX {
         position: absolute;
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
         background-color: transparent;
         top: 5px;
         right: 5px;
         transition: all 0.1s;
         z-index: 0;
-        font-size: 30px;
-        text-align: center;
-        cursor: pointer;
+        font-size: 20px;
     }
+
     .circle1 {
-        top: 20%;
+        top: 30%;
     }
     .circle2 {
         bottom: 20%;
     }
     .circle3 {
-        top: 20%;
+        top: 30%;
     }
     .circle4 {
         bottom: 20%;
     }
     .circle5 {
-        top: 20%;
+        top: 30%;
     }
     /*Skills*/
     .skillsSection {
@@ -785,13 +807,13 @@ ul {
     .skills {
         position: absolute;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         row-gap: 50px;
         column-gap: 0px;
-        width: 90%;
-        height: 80%;
-        left: 5%;
+        width: 105%;
+        height: 70%;
+        left: -10%;
         top: 30%;
     }
     .skill {
@@ -799,8 +821,8 @@ ul {
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
-        width: 50%;
-        height: 50%;
+        width: 80%;
+        height: 90%;
         background-color: rgb(60, 0, 140);
         border-radius: 10px;
     }
@@ -808,16 +830,16 @@ ul {
         position: absolute;
         left: 50%;
         top: 5%;
-        font-size: 40px;
+        font-size: 25px;
         color: rgb(226, 226, 226);
         transform: translate(-50%,-50%);
     }
     .skillLogo {
         position: absolute;
         left: 50%;
-        top: 60%;
+        top: 65%;
         transform: translate(-50%,-50%);
-        height: 100px;
+        height: 80px;
     }
     /*Projects*/
     .projectsSection {
@@ -832,13 +854,13 @@ ul {
     .projects {
         position: absolute;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        row-gap: 50px;
-        column-gap: 50px;
-        width: 45%;
+        row-gap: 40px;
+        column-gap: 40px;
+        width: 90%;
         height: 80%;
-        left: 40%;
+        left: 0%;
         top: 30%;
     }
     .project {
@@ -854,21 +876,23 @@ ul {
     .project h3 {
         position: absolute;
         left: 50%;
-        top: 5%;
-        font-size: 40px;
+        top: 0%;
+        font-size: 25px;
         color: rgb(226, 226, 226);
         transform: translate(-50%,-50%);
     }
     .project img {
         position: absolute;
         left: 50%;
-        top: 50%;
+        top: 45%;
         transform: translate(-50%,-50%);
+        height: 90px;
+        width: 90px;
     }
     .container {
         position: absolute;
         left: 50%;
-        bottom: 5%;
+        bottom: -5%;
         transform: translate(-50%,-50%);
         display: flex; 
         justify-content: center;
@@ -877,47 +901,1443 @@ ul {
     .btnSnake {
         position: relative;
         width: 80px;
-        height: 50px;
+        height: 40px;
         font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
     .btnTic {
         position: relative;
         width: 80px;
-        height: 50px;
+        height: 40px;
         font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
     .btn3 {
         position: relative;
         width: 80px;
-        height: 50px;
+        height: 40px;
         font-size: 20px;
         transition: all 0.2s ease-in-out;
+        
     }
     .btn4 {
         position: relative;
         width: 80px;
-        height: 50px;
+        height: 40px;
         font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
     .btn5 {
         position: relative;
         width: 80px;
-        height: 50px;
+        height: 40px;
         font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
     .btn6 {
         position: relative;
         width: 80px;
-        height: 50px;
+        height: 40px;
         font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
-    
 }
+
+@media screen and (min-width: 390px) and (max-width: 413px) {
+
+    .headerLang {
+        color: rgb(226, 226, 226);
+        font-family: monospace;
+        font-size: 40px;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%,-50%);
+    }
+    .languages {
+        position: absolute;
+        width: 100%;
+        height: 25%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 30px;
+        font-family: monospace;
+    }
+    .btnDE {
+        position: absolute;
+        width: 40%;
+        height: 90%;
+        left: 25%;
+        transform: translate(-50%);
+        background-color: rgb(60, 0, 140);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        color: rgb(226, 226, 226);
+    }
+    .btnEN {
+        position: absolute;
+        width: 40%;
+        height: 90%;
+        left: 75%;
+        transform: translate(-50%);
+        background-color: rgb(60, 0, 140);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        color: rgb(226, 226, 226);
+    }
+    .sidebarBTN {
+        position: fixed;
+        left: 30px;
+        top: 30px;
+        transform: translate(-50%,-50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: transparent;
+        z-index: 2;
+        transition: all 0.1;
+    }
+    .dots {
+        position: fixed;
+        z-index: 3;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 10px;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .threeDots {
+        background-color: rgb(226, 226, 226);
+        width: 30%;
+        height: 3px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .dot1 {
+        top: 25%;
+    }
+    .dot2 {
+        top: 50%;
+    }
+    .dot3 {
+        top: 75%;
+    }
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100%;
+        background-color: rgb(20, 20, 20); 
+        z-index: 1;
+        transition: all 0.3s;      
+    }
+    .sectionList a {
+        text-decoration: none;
+        color: white;
+        position: relative;
+        left: 50%;
+        font-size: 20px;
+        text-align: left;
+    }
+    .sectionList { 
+        list-style: none;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        transform: translate(-50%,-50%);
+        }
+    .sectionList li {
+        padding-left: 20%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .sectionList li:hover {
+        background-color: rgb(60, 0, 140);
+    }
+    .lang {
+        margin-top: 50px;
+    }
+    .socials {
+        position: relative;
+        top: 90%;
+        left: 40%;
+        transform: translate(-50%,-50%);
+    }
+    .socials li {
+        display: inline-block;
+        margin: 10%;
+    }
+    .socialLogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        transition: all 0.2s ease-in-out;
+    }
+    .socialLogo:hover {
+        transform: scale(1.1);
+    }
+    .content {
+        position: absolute;
+        width: 90%;
+        height: 100%;
+        left: 10%;
+        margin-left: 0%;
+    }
+    .headerBox {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 10%;
+        left: 30%;
+        width: 80%;
+        height: 10%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+        font-size: 28px;
+    }
+    /*About me*/
+    .aboutmeSection {
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    .titleBox {
+        position: relative;
+        top: 30%;
+        left: 20%;
+        width: 85%;
+        height: 10%;
+        color: rgb(226, 226, 226);
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+    }
+    .myName {
+        position: relative;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%,-50%);
+        font-size: 20px;
+        
+    }
+    .myDesc {
+        position: absolute;
+        left: -10%;
+        top: 40%;
+    }
+    /*Journey*/
+    .journeySection {
+        position: absolute;
+        display: grid;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    .milestones {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 100%;
+        height: 60%;
+        left: -10%;
+        top: 40%;
+    }
+    .milestone {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .milestone h3 {
+        position: absolute;
+        left: 70%;
+        font-size: 25px;
+        color: rgb(226, 226, 226);
+        transform: translate(-50%,-50%);
+        width: 100%;
+    }
+    .headerCircle {
+        bottom: 25%;
+    }
+    .milestoneCircle {
+        position: absolute;
+        border-radius: 50%;
+        width: 80px;
+        height: 30px;
+        border: double blue;
+        background-color: cornflowerblue;
+        left: 50%;
+        transition: all 0.3s;
+    }
+    .milestoneCircle:hover {
+        transform: scale(1.1);
+    }
+    .contentBox {
+        position: absolute;
+        width: 60%;
+        height: 20%;
+        left: 45%;
+        top: 30%;
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+    }
+    .milestoneContent {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 50%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        transition: all 0.3s;
+        font-size: 14px;
+        z-index: 0;
+    }
+    .milestoneX {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: transparent;
+        top: 5px;
+        right: 5px;
+        transition: all 0.1s;
+        z-index: 0;
+        font-size: 20px;
+    }
+
+    .circle1 {
+        top: 30%;
+    }
+    .circle2 {
+        bottom: 20%;
+    }
+    .circle3 {
+        top: 30%;
+    }
+    .circle4 {
+        bottom: 20%;
+    }
+    .circle5 {
+        top: 30%;
+    }
+    /*Skills*/
+    .skillsSection {
+        position: absolute;
+        display: grid;
+        top: 200%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    .skills {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 50px;
+        column-gap: 0px;
+        width: 105%;
+        height: 70%;
+        left: -10%;
+        top: 30%;
+    }
+    .skill {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 80%;
+        height: 90%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+    }
+    .skill h3 {
+        position: absolute;
+        left: 50%;
+        top: 5%;
+        font-size: 25px;
+        color: rgb(226, 226, 226);
+        transform: translate(-50%,-50%);
+    }
+    .skillLogo {
+        position: absolute;
+        left: 50%;
+        top: 65%;
+        transform: translate(-50%,-50%);
+        height: 70px;
+    }
+    /*Projects*/
+    .projectsSection {
+        position: absolute;
+        top: 300%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    
+    .projects {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 40px;
+        column-gap: 40px;
+        width: 90%;
+        height: 80%;
+        left: 0%;
+        top: 30%;
+    }
+    .project {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+    }
+    .project h3 {
+        position: absolute;
+        left: 50%;
+        top: 0%;
+        font-size: 25px;
+        color: rgb(226, 226, 226);
+        transform: translate(-50%,-50%);
+    }
+    .project img {
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%,-50%);
+        height: 90px;
+        width: 90px;
+    }
+    .container {
+        position: absolute;
+        left: 50%;
+        bottom: -5%;
+        transform: translate(-50%,-50%);
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    .btnSnake {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btnTic {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn3 {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+        
+    }
+    .btn4 {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn5 {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn6 {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 389px) {
+
+    .headerLang {
+        color: rgb(226, 226, 226);
+        font-family: monospace;
+        font-size: 40px;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%,-50%);
+    }
+    .languages {
+        position: absolute;
+        width: 100%;
+        height: 25%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 30px;
+        font-family: monospace;
+    }
+    .btnDE {
+        position: absolute;
+        width: 40%;
+        height: 90%;
+        left: 25%;
+        transform: translate(-50%);
+        background-color: rgb(60, 0, 140);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        color: rgb(226, 226, 226);
+    }
+    .btnEN {
+        position: absolute;
+        width: 40%;
+        height: 90%;
+        left: 75%;
+        transform: translate(-50%);
+        background-color: rgb(60, 0, 140);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        color: rgb(226, 226, 226);
+    }
+    .sidebarBTN {
+        position: fixed;
+        left: 30px;
+        top: 30px;
+        transform: translate(-50%,-50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: transparent;
+        z-index: 2;
+        transition: all 0.1;
+    }
+    .dots {
+        position: fixed;
+        z-index: 3;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 10px;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .threeDots {
+        background-color: rgb(226, 226, 226);
+        width: 30%;
+        height: 3px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .dot1 {
+        top: 25%;
+    }
+    .dot2 {
+        top: 50%;
+    }
+    .dot3 {
+        top: 75%;
+    }
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100%;
+        background-color: rgb(20, 20, 20); 
+        z-index: 1;
+        transition: all 0.3s;      
+    }
+    .sectionList a {
+        text-decoration: none;
+        color: white;
+        position: relative;
+        left: 50%;
+        font-size: 20px;
+        text-align: left;
+    }
+    .sectionList { 
+        list-style: none;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        transform: translate(-50%,-50%);
+        }
+    .sectionList li {
+        padding-left: 20%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .sectionList li:hover {
+        background-color: rgb(60, 0, 140);
+    }
+    .lang {
+        margin-top: 50px;
+    }
+    .socials {
+        position: relative;
+        top: 90%;
+        left: 40%;
+        transform: translate(-50%,-50%);
+    }
+    .socials li {
+        display: inline-block;
+        margin: 10%;
+    }
+    .socialLogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        top: 50%;
+        width: 35px;
+        height: 35px;
+        transition: all 0.2s ease-in-out;
+    }
+    .socialLogo:hover {
+        transform: scale(1.1);
+    }
+    .content {
+        position: absolute;
+        width: 90%;
+        height: 100%;
+        left: 10%;
+        margin-left: 0%;
+    }
+    .headerBox {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 10%;
+        left: 30%;
+        width: 80%;
+        height: 10%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+        font-size: 28px;
+    }
+    /*About me*/
+    .aboutmeSection {
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    .titleBox {
+        position: relative;
+        top: 30%;
+        left: 20%;
+        width: 85%;
+        height: 10%;
+        color: rgb(226, 226, 226);
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+    }
+    .myName {
+        position: relative;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%,-50%);
+        font-size: 18px;
+        
+    }
+    .myDesc {
+        position: absolute;
+        left: -10%;
+        top: 40%;
+    }
+    /*Journey*/
+    .journeySection {
+        position: absolute;
+        display: grid;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    .milestones {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 100%;
+        height: 60%;
+        left: -10%;
+        top: 40%;
+    }
+    .milestone {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .milestone h3 {
+        position: absolute;
+        left: 70%;
+        font-size: 20px;
+        color: rgb(226, 226, 226);
+        transform: translate(-50%,-50%);
+        width: 100%;
+    }
+    .headerCircle {
+        bottom: 25%;
+    }
+    .milestoneCircle {
+        position: absolute;
+        border-radius: 50%;
+        width: 80px;
+        height: 30px;
+        border: double blue;
+        background-color: cornflowerblue;
+        left: 50%;
+        transition: all 0.3s;
+    }
+    .milestoneCircle:hover {
+        transform: scale(1.1);
+    }
+    .contentBox {
+        position: absolute;
+        width: 60%;
+        height: 20%;
+        left: 45%;
+        top: 30%;
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+    }
+    .milestoneContent {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 50%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        transition: all 0.3s;
+        font-size: 13px;
+        z-index: 0;
+    }
+    .milestoneX {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: transparent;
+        top: 5px;
+        right: 5px;
+        transition: all 0.1s;
+        z-index: 0;
+        font-size: 20px;
+    }
+
+    .circle1 {
+        top: 30%;
+    }
+    .circle2 {
+        bottom: 20%;
+    }
+    .circle3 {
+        top: 30%;
+    }
+    .circle4 {
+        bottom: 20%;
+    }
+    .circle5 {
+        top: 30%;
+    }
+    /*Skills*/
+    .skillsSection {
+        position: absolute;
+        display: grid;
+        top: 200%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    .skills {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 50px;
+        column-gap: 0px;
+        width: 105%;
+        height: 70%;
+        left: -10%;
+        top: 30%;
+    }
+    .skill {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 80%;
+        height: 90%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+    }
+    .skill h3 {
+        position: absolute;
+        left: 50%;
+        top: 5%;
+        font-size: 23px;
+        color: rgb(226, 226, 226);
+        transform: translate(-50%,-50%);
+    }
+    .skillLogo {
+        position: absolute;
+        left: 50%;
+        top: 65%;
+        transform: translate(-50%,-50%);
+        height: 50px;
+    }
+    /*Projects*/
+    .projectsSection {
+        position: absolute;
+        top: 300%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    
+    .projects {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 40px;
+        column-gap: 40px;
+        width: 90%;
+        height: 80%;
+        left: 0%;
+        top: 30%;
+    }
+    .project {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+    }
+    .project h3 {
+        position: absolute;
+        left: 50%;
+        top: 0%;
+        font-size: 23px;
+        color: rgb(226, 226, 226);
+        transform: translate(-50%,-50%);
+    }
+    .project img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        height: 70px;
+        width: 70px;
+    }
+    .container {
+        position: absolute;
+        left: 50%;
+        top: 87%;
+        transform: translate(-50%,-50%);
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    .btnSnake {
+        position: relative;
+        width: 75px;
+        height: 30px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btnTic {
+        position: relative;
+        width: 75px;
+        height: 30px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn3 {
+        position: relative;
+        width: 75px;
+        height: 30px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+        
+    }
+    .btn4 {
+        position: relative;
+        width: 75px;
+        height: 30px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn5 {
+        position: relative;
+        width: 75px;
+        height: 30px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn6 {
+        position: relative;
+        width: 75px;
+        height: 30px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 359px) {
+
+    .headerLang {
+        color: rgb(226, 226, 226);
+        font-family: monospace;
+        font-size: 40px;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%,-50%);
+    }
+    .languages {
+        position: absolute;
+        width: 100%;
+        height: 25%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 30px;
+        font-family: monospace;
+    }
+    .btnDE {
+        position: absolute;
+        width: 40%;
+        height: 90%;
+        left: 25%;
+        transform: translate(-50%);
+        background-color: rgb(60, 0, 140);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        color: rgb(226, 226, 226);
+    }
+    .btnEN {
+        position: absolute;
+        width: 40%;
+        height: 90%;
+        left: 75%;
+        transform: translate(-50%);
+        background-color: rgb(60, 0, 140);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        color: rgb(226, 226, 226);
+    }
+    .sidebarBTN {
+        position: fixed;
+        left: 30px;
+        top: 30px;
+        transform: translate(-50%,-50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: transparent;
+        z-index: 2;
+        transition: all 0.1;
+    }
+    .dots {
+        position: fixed;
+        z-index: 3;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 10px;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .threeDots {
+        background-color: rgb(226, 226, 226);
+        width: 30%;
+        height: 3px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .dot1 {
+        top: 25%;
+    }
+    .dot2 {
+        top: 50%;
+    }
+    .dot3 {
+        top: 75%;
+    }
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100%;
+        background-color: rgb(20, 20, 20); 
+        z-index: 1;
+        transition: all 0.3s;      
+    }
+    .sectionList a {
+        text-decoration: none;
+        color: white;
+        position: relative;
+        left: 50%;
+        font-size: 15px;
+        text-align: left;
+    }
+    .sectionList { 
+        list-style: none;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        transform: translate(-50%,-50%);
+        }
+    .sectionList li {
+        padding-left: 20%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .sectionList li:hover {
+        background-color: rgb(60, 0, 140);
+    }
+    .lang {
+        margin-top: 50px;
+    }
+    .socials {
+        position: relative;
+        top: 90%;
+        left: 40%;
+        transform: translate(-50%,-50%);
+    }
+    .socials li {
+        display: inline-block;
+        margin: 10%;
+    }
+    .socialLogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        top: 50%;
+        width: 30px;
+        height: 30px;
+        transition: all 0.2s ease-in-out;
+    }
+    .socialLogo:hover {
+        transform: scale(1.1);
+    }
+    .content {
+        position: absolute;
+        width: 90%;
+        height: 100%;
+        left: 10%;
+        margin-left: 0%;
+    }
+    .headerBox {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 10%;
+        left: 30%;
+        width: 80%;
+        height: 10%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+        font-size: 20px;
+    }
+    /*About me*/
+    .aboutmeSection {
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    .titleBox {
+        position: relative;
+        top: 30%;
+        left: 22%;
+        width: 88%;
+        height: 10%;
+        color: rgb(226, 226, 226);
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+    }
+    .myName {
+        position: relative;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%,-50%);
+        font-size: 15px;
+        
+    }
+    .myDesc {
+        position: absolute;
+        left: -10%;
+        top: 40%;
+        font-size: 15px;
+    }
+    /*Journey*/
+    .journeySection {
+        position: absolute;
+        display: grid;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    .milestones {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 100%;
+        height: 60%;
+        left: -10%;
+        top: 40%;
+    }
+    .milestone {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .milestone h3 {
+        position: absolute;
+        left: 70%;
+        font-size: 17px;
+        color: rgb(226, 226, 226);
+        transform: translate(-50%,-50%);
+        width: 100%;
+    }
+    .headerCircle {
+        bottom: 25%;
+    }
+    .milestoneCircle {
+        position: absolute;
+        border-radius: 50%;
+        width: 70px;
+        height: 20px;
+        border: double blue;
+        background-color: cornflowerblue;
+        left: 50%;
+        transition: all 0.3s;
+    }
+    .milestoneCircle:hover {
+        transform: scale(1.1);
+    }
+    .contentBox {
+        position: absolute;
+        width: 60%;
+        height: 20%;
+        left: 45%;
+        top: 30%;
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+    }
+    .milestoneContent {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 50%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        transition: all 0.3s;
+        font-size: 10px;
+        z-index: 0;
+    }
+    .milestoneX {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: transparent;
+        top: 5px;
+        right: 5px;
+        transition: all 0.1s;
+        z-index: 0;
+        font-size: 20px;
+    }
+
+    .circle1 {
+        top: 30%;
+    }
+    .circle2 {
+        bottom: 20%;
+    }
+    .circle3 {
+        top: 30%;
+    }
+    .circle4 {
+        bottom: 20%;
+    }
+    .circle5 {
+        top: 30%;
+    }
+    /*Skills*/
+    .skillsSection {
+        position: absolute;
+        display: grid;
+        top: 200%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    .skills {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 50px;
+        column-gap: 0px;
+        width: 105%;
+        height: 70%;
+        left: -10%;
+        top: 30%;
+    }
+    .skill {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 80%;
+        height: 90%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+    }
+    .skill h3 {
+        position: absolute;
+        left: 50%;
+        top: 0%;
+        font-size: 20px;
+        color: rgb(226, 226, 226);
+        transform: translate(-50%,-50%);
+    }
+    .skillLogo {
+        position: absolute;
+        left: 50%;
+        top: 65%;
+        transform: translate(-50%,-50%);
+        height: 40px;
+    }
+    /*Projects*/
+    .projectsSection {
+        position: absolute;
+        top: 300%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    
+    .projects {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 40px;
+        column-gap: 40px;
+        width: 90%;
+        height: 80%;
+        left: 0%;
+        top: 30%;
+    }
+    .project {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+    }
+    .project h3 {
+        position: absolute;
+        left: 50%;
+        top: 0%;
+        font-size: 20px;
+        color: rgb(226, 226, 226);
+        transform: translate(-50%,-50%);
+    }
+    .project img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        height: 55px;
+        width: 55px;
+    }
+    .container {
+        position: absolute;
+        left: 50%;
+        top: 87%;
+        transform: translate(-50%,-50%);
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    .btnSnake {
+        position: relative;
+        width: 75px;
+        height: 30px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btnTic {
+        position: relative;
+        width: 75px;
+        height: 30px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn3 {
+        position: relative;
+        width: 75px;
+        height: 30px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+        
+    }
+    .btn4 {
+        position: relative;
+        width: 75px;
+        height: 30px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn5 {
+        position: relative;
+        width: 75px;
+        height: 30px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn6 {
+        position: relative;
+        width: 75px;
+        height: 30px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+/*anchors*/
+#anchor1 {
+    position: absolute;
+    top: 0%;
+}
+#anchor2 {
+    position: absolute;
+    top: 100%;
+}
+#anchor3 {
+    position: absolute;
+    top: 200%;
+}
+#anchor4 {
+    position: absolute;
+    top: 300%;
+}
+
+
+/*Desktop*/
 @media screen and (min-width: 1920px) {
     
     .headerLang {
@@ -1008,7 +2428,7 @@ ul {
     .socials {
         position: relative;
         top: 90%;
-        left: 50%;
+        left: 40%;
         transform: translate(-50%,-50%);
     }
     .socials li {
@@ -1223,7 +2643,7 @@ ul {
         position: absolute;
         left: 50%;
         top: 5%;
-        font-size: 40px;
+        font-size: 30px;
         color: rgb(226, 226, 226);
         transform: translate(-50%,-50%);
     }
@@ -1331,8 +2751,11 @@ ul {
         font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
+    
 }
-@media screen and (min-width: 1366px) {
+
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+    
     .headerLang {
         color: rgb(226, 226, 226);
         font-family: monospace;
@@ -1384,7 +2807,7 @@ ul {
         position: fixed;
         top: 0;
         left: 0%;
-        width: 13%;
+        width: 15%;
         height: 100%;
         background-color: rgb(20, 20, 20); 
         z-index: 1;      
@@ -1394,7 +2817,7 @@ ul {
         color: white;
         position: relative;
         left: 50%;
-        font-size: 18px;
+        font-size: 20px;
         text-align: left;
     }
     .sectionList { 
@@ -1421,7 +2844,7 @@ ul {
     .socials {
         position: relative;
         top: 90%;
-        left: 40%;
+        left: 50%;
         transform: translate(-50%,-50%);
     }
     .socials li {
@@ -1434,8 +2857,8 @@ ul {
         justify-content: center;
         left: 50%;
         top: 50%;
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
         transition: all 0.2s ease-in-out;
     }
     .socialLogo:hover {
@@ -1446,7 +2869,7 @@ ul {
         position: absolute;
         width: 90%;
         height: 100%;
-        left: 13%;
+        left: 15%;
         margin-left: 0%;
     }
     .headerBox {
@@ -1461,7 +2884,7 @@ ul {
         background-color: rgb(60, 0, 140);
         border-radius: 10px;
         transform: translate(-50%,-50%);
-        font-size: 35px;
+        font-size: 45px;
     }
     /*About me*/
     .aboutmeSection {
@@ -1476,7 +2899,7 @@ ul {
         position: relative;
         top: 30%;
         left: 20%;
-        width: 60%;
+        width: 62%;
         height: 15%;
         color: rgb(226, 226, 226);
         background-color: rgb(60, 0, 140);
@@ -1488,7 +2911,7 @@ ul {
         top: 50%;
         left: 55%;
         transform: translate(-50%,-50%);
-        font-size: 50px;
+        font-size: 60px;
         
     }
     .myDesc {
@@ -1532,7 +2955,423 @@ ul {
     }
     .milestone h3 {
         position: absolute;
+        left: 58%;
+        font-size: 25px;
+        color: rgb(226, 226, 226);
+        transform: translate(-50%,-50%);
+    }
+    .headerCircle {
+        bottom: 25%;
+    }
+    .milestoneCircle {
+        position: absolute;
+        border-radius: 50%;
+        width: 80px;
+        height: 30px;
+        border: double blue;
+        background-color: cornflowerblue;
+        left: 50%;
+        transition: all 0.3s;
+    }
+    .milestoneCircle:hover {
+        transform: scale(1.1);
+    }
+    .milestoneContent {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 50%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        transition: all 0.3s;
+        z-index: 0;
+        font-size: 30px;
+    }
+    .milestoneX {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: transparent;
+        top: 5px;
+        right: 5px;
+        transition: all 0.1s;
+        z-index: 0;
+        font-size: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .circle1 {
+        top: 20%;
+    }
+    .circle2 {
+        bottom: 20%;
+    }
+    .circle3 {
+        top: 20%;
+    }
+    .circle4 {
+        bottom: 20%;
+    }
+    .circle5 {
+        top: 20%;
+    }
+    /*Skills*/
+    .skillsSection {
+        position: absolute;
+        display: grid;
+        top: 200%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    .skills {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 50px;
+        column-gap: 0px;
+        width: 90%;
+        height: 80%;
+        left: 5%;
+        top: 30%;
+    }
+    .skill {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 50%;
+        height: 50%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+    }
+    .skill h3 {
+        position: absolute;
+        left: 50%;
+        top: 5%;
+        font-size: 25px;
+        color: rgb(226, 226, 226);
+        transform: translate(-50%,-50%);
+    }
+    .skillLogo {
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%,-50%);
+        height: 80px;
+    }
+    /*Projects*/
+    .projectsSection {
+        position: absolute;
+        top: 300%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    
+    .projects {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 50px;
+        column-gap: 50px;
+        width: 45%;
+        height: 80%;
+        left: 40%;
+        top: 30%;
+    }
+    .project {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+    }
+    .project h3 {
+        position: absolute;
+        left: 50%;
+        top: 0%;
+        font-size: 30px;
+        color: rgb(226, 226, 226);
+        transform: translate(-50%,-50%);
+    }
+    .project img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .container {
+        position: absolute;
+        left: 50%;
+        top: 87%;
+        transform: translate(-50%,-50%);
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    .btnSnake {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btnTic {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn3 {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn4 {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn5 {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn6 {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    
+}
+
+@media screen and (min-width: 1536px) and (max-width: 1599px) {
+    
+    .headerLang {
+        color: rgb(226, 226, 226);
+        font-family: monospace;
+        font-size: 50px;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%,-50%);
+    }
+    .languages {
+        position: absolute;
+        width: 100%;
+        height: 25%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 40px;
+        font-family: monospace;
+    }
+    .btnDE {
+        position: absolute;
+        width: 20%;
+        height: 100%;
+        left: 35%;
+        transform: translate(-50%);
+        background-color: rgb(60, 0, 140);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        color: rgb(226, 226, 226);
+    }
+    .btnEN {
+        position: absolute;
+        width: 20%;
+        height: 100%;
         left: 65%;
+        transform: translate(-50%);
+        background-color: rgb(60, 0, 140);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        color: rgb(226, 226, 226);
+    }
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0%;
+        width: 15%;
+        height: 100%;
+        background-color: rgb(20, 20, 20); 
+        z-index: 1;      
+    }
+    .sectionList a {
+        text-decoration: none;
+        color: white;
+        position: relative;
+        left: 50%;
+        font-size: 20px;
+        text-align: left;
+    }
+    .sectionList { 
+        list-style: none;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        transform: translate(-50%,-50%);
+        }
+    .sectionList li {
+        padding-left: 20%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .sectionList li:hover {
+        background-color: rgb(60, 0, 140);
+    }
+    .lang {
+        margin-top: 50px;
+    }
+    .socials {
+        position: relative;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .socials li {
+        display: inline-block;
+        margin: 10%;
+    }
+    .socialLogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        transition: all 0.2s ease-in-out;
+    }
+    .socialLogo:hover {
+        transform: scale(1.1);
+    }
+    
+    .content {
+        position: absolute;
+        width: 90%;
+        height: 100%;
+        left: 15%;
+        margin-left: 0%;
+    }
+    .headerBox {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 10%;
+        left: 20%;
+        width: 30%;
+        height: 10%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+        font-size: 45px;
+    }
+    /*About me*/
+    .aboutmeSection {
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    .titleBox {
+        position: relative;
+        top: 30%;
+        left: 20%;
+        width: 65%;
+        height: 15%;
+        color: rgb(226, 226, 226);
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+    }
+    .myName {
+        position: relative;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%,-50%);
+        font-size: 60px;
+        
+    }
+    .myDesc {
+        position: absolute;
+        left: 0%;
+        top: 45%;
+    }
+    /*Journey*/
+    .journeySection {
+        position: absolute;
+        display: grid;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    .contentBox {
+        position: absolute;
+        left: 25%;
+        top: 50%;
+        width: 40%;
+        height: 30%;
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+    }
+    .milestones {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 45%;
+        height: 60%;
+        left: 40%;
+        top: 40%;
+    }
+    .milestone {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .milestone h3 {
+        position: absolute;
+        left: 58%;
         font-size: 25px;
         color: rgb(226, 226, 226);
         transform: translate(-50%,-50%);
@@ -1586,19 +3425,19 @@ ul {
         cursor: pointer;
     }
     .circle1 {
-        top: 35%;
+        top: 30%;
     }
     .circle2 {
         bottom: 20%;
     }
     .circle3 {
-        top: 35%;
+        top: 30%;
     }
     .circle4 {
         bottom: 20%;
     }
     .circle5 {
-        top: 35%;
+        top: 30%;
     }
     /*Skills*/
     .skillsSection {
@@ -1645,7 +3484,7 @@ ul {
         left: 50%;
         top: 60%;
         transform: translate(-50%,-50%);
-        height: 60px;
+        height: 80px;
     }
     /*Projects*/
     .projectsSection {
@@ -1682,8 +3521,8 @@ ul {
     .project h3 {
         position: absolute;
         left: 50%;
-        top: 5%;
-        font-size: 25px;
+        top: 0%;
+        font-size: 30px;
         color: rgb(226, 226, 226);
         transform: translate(-50%,-50%);
     }
@@ -1691,14 +3530,12 @@ ul {
         position: absolute;
         left: 50%;
         top: 50%;
-        width: 70px;
-        height: 70px;
         transform: translate(-50%,-50%);
     }
     .container {
         position: absolute;
         left: 50%;
-        top: 85%;
+        top: 87%;
         transform: translate(-50%,-50%);
         display: flex; 
         justify-content: center;
@@ -1746,14 +3583,15 @@ ul {
         font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
+    
 }
 
-@media screen and (min-width: 360px) {
-
+@media screen and (min-width: 1440px) and (max-width: 1535px) {
+    
     .headerLang {
         color: rgb(226, 226, 226);
         font-family: monospace;
-        font-size: 40px;
+        font-size: 50px;
         position: absolute;
         left: 50%;
         top: 25%;
@@ -1763,17 +3601,17 @@ ul {
         position: absolute;
         width: 100%;
         height: 25%;
-        top: 55%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        font-size: 25px;
+        font-size: 40px;
         font-family: monospace;
     }
     .btnDE {
         position: absolute;
-        width: 30%;
-        height: 70%;
-        left: 30%;
+        width: 20%;
+        height: 100%;
+        left: 35%;
         transform: translate(-50%);
         background-color: rgb(60, 0, 140);
         display: flex;
@@ -1785,9 +3623,9 @@ ul {
     }
     .btnEN {
         position: absolute;
-        width: 30%;
-        height: 70%;
-        left: 70%;
+        width: 20%;
+        height: 100%;
+        left: 65%;
         transform: translate(-50%);
         background-color: rgb(60, 0, 140);
         display: flex;
@@ -1801,7 +3639,7 @@ ul {
         position: fixed;
         top: 0;
         left: 0%;
-        width: 50%;
+        width: 15%;
         height: 100%;
         background-color: rgb(20, 20, 20); 
         z-index: 1;      
@@ -1851,8 +3689,8 @@ ul {
         justify-content: center;
         left: 50%;
         top: 50%;
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         transition: all 0.2s ease-in-out;
     }
     .socialLogo:hover {
@@ -1863,7 +3701,7 @@ ul {
         position: absolute;
         width: 90%;
         height: 100%;
-        left: 10%;
+        left: 15%;
         margin-left: 0%;
     }
     .headerBox {
@@ -1873,18 +3711,18 @@ ul {
         align-items: center;
         top: 10%;
         left: 20%;
-        width: 60%;
+        width: 35%;
         height: 10%;
         background-color: rgb(60, 0, 140);
         border-radius: 10px;
         transform: translate(-50%,-50%);
-        font-size: 20px;
+        font-size: 45px;
     }
     /*About me*/
     .aboutmeSection {
         position: absolute;
         top: 0%;
-        left: 0%;
+        left: 10%;
         width: 100%;
         height: 100%;
         color: rgb(226, 226, 226);
@@ -1905,13 +3743,13 @@ ul {
         top: 50%;
         left: 55%;
         transform: translate(-50%,-50%);
-        font-size: 20px;
+        font-size: 52px;
         
     }
     .myDesc {
         position: absolute;
         left: 0%;
-        top: 40%;
+        top: 45%;
     }
     /*Journey*/
     .journeySection {
@@ -1937,10 +3775,10 @@ ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        width: 80%;
+        width: 45%;
         height: 60%;
-        left: 0%;
-        top: 50%;
+        left: 40%;
+        top: 40%;
     }
     .milestone {
         position: relative;
@@ -1949,8 +3787,8 @@ ul {
     }
     .milestone h3 {
         position: absolute;
-        left: 90%;
-        font-size: 15px;
+        left: 58%;
+        font-size: 25px;
         color: rgb(226, 226, 226);
         transform: translate(-50%,-50%);
     }
@@ -1960,8 +3798,8 @@ ul {
     .milestoneCircle {
         position: absolute;
         border-radius: 50%;
-        width: 70px;
-        height: 25px;
+        width: 80px;
+        height: 30px;
         border: double blue;
         background-color: cornflowerblue;
         left: 50%;
@@ -1973,10 +3811,10 @@ ul {
     .milestoneContent {
         opacity: 0;
         position: absolute;
-        width: 150%;
-        height: 80%;
-        left: 100%;
-        top: 0%;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 50%;
         background-color: rgb(60, 0, 140);
         border-radius: 10px;
         display: flex;
@@ -1986,7 +3824,7 @@ ul {
         transform: translate(-50%,-50%);
         transition: all 0.3s;
         z-index: 0;
-        font-size: 13px;
+        font-size: 25px;
     }
     .milestoneX {
         position: absolute;
@@ -1998,24 +3836,24 @@ ul {
         right: 5px;
         transition: all 0.1s;
         z-index: 0;
-        font-size: 20px;
+        font-size: 30px;
         text-align: center;
         cursor: pointer;
     }
     .circle1 {
-        top: 20%;
+        top: 30%;
     }
     .circle2 {
         bottom: 20%;
     }
     .circle3 {
-        top: 20%;
+        top: 30%;
     }
     .circle4 {
         bottom: 20%;
     }
     .circle5 {
-        top: 20%;
+        top: 30%;
     }
     /*Skills*/
     .skillsSection {
@@ -2030,13 +3868,13 @@ ul {
     .skills {
         position: absolute;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        row-gap: 30px;
-        column-gap: 30px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 50px;
+        column-gap: 0px;
         width: 90%;
         height: 80%;
-        left: 0%;
+        left: 5%;
         top: 30%;
     }
     .skill {
@@ -2044,8 +3882,8 @@ ul {
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
-        width: 80%;
-        height: 70%;
+        width: 50%;
+        height: 50%;
         background-color: rgb(60, 0, 140);
         border-radius: 10px;
     }
@@ -2053,7 +3891,7 @@ ul {
         position: absolute;
         left: 50%;
         top: 5%;
-        font-size: 20px;
+        font-size: 25px;
         color: rgb(226, 226, 226);
         transform: translate(-50%,-50%);
     }
@@ -2062,7 +3900,7 @@ ul {
         left: 50%;
         top: 60%;
         transform: translate(-50%,-50%);
-        height: 45px;
+        height: 80px;
     }
     /*Projects*/
     .projectsSection {
@@ -2079,11 +3917,11 @@ ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        row-gap: 20px;
-        column-gap: 20px;
-        width: 100%;
+        row-gap: 50px;
+        column-gap: 50px;
+        width: 45%;
         height: 80%;
-        left: -5%;
+        left: 40%;
         top: 30%;
     }
     .project {
@@ -2092,7 +3930,7 @@ ul {
         top: 50%;
         transform: translate(-50%,-50%);
         width: 100%;
-        height: 90%;
+        height: 100%;
         background-color: rgb(60, 0, 140);
         border-radius: 10px;
     }
@@ -2100,23 +3938,20 @@ ul {
         position: absolute;
         left: 50%;
         top: 0%;
-        font-size: 20px;
+        font-size: 30px;
         color: rgb(226, 226, 226);
         transform: translate(-50%,-50%);
     }
     .project img {
         position: absolute;
         left: 50%;
-        top: 45%;
-        width: 50px;
-        height: 50px;
+        top: 50%;
         transform: translate(-50%,-50%);
     }
     .container {
         position: absolute;
         left: 50%;
-        top: 80%;
-        bottom: 5%;
+        top: 87%;
         transform: translate(-50%,-50%);
         display: flex; 
         justify-content: center;
@@ -2124,46 +3959,883 @@ ul {
     }
     .btnSnake {
         position: relative;
-        width: 60px;
+        width: 80px;
         height: 40px;
-        font-size: 15px;
+        font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
     .btnTic {
         position: relative;
-        width: 60px;
+        width: 80px;
         height: 40px;
-        font-size: 15px;
+        font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
     .btn3 {
         position: relative;
-        width: 60px;
+        width: 80px;
         height: 40px;
-        font-size: 15px;
+        font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
     .btn4 {
         position: relative;
-        width: 60px;
+        width: 80px;
         height: 40px;
-        font-size: 15px;
+        font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
     .btn5 {
         position: relative;
-        width: 60px;
+        width: 80px;
         height: 40px;
-        font-size: 15px;
+        font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
     .btn6 {
         position: relative;
-        width: 60px;
+        width: 80px;
         height: 40px;
-        font-size: 15px;
+        font-size: 20px;
         transition: all 0.2s ease-in-out;
     }
+    
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1439px) {
+    
+    .headerLang {
+        color: rgb(226, 226, 226);
+        font-family: monospace;
+        font-size: 50px;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%,-50%);
+    }
+    .languages {
+        position: absolute;
+        width: 100%;
+        height: 25%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 40px;
+        font-family: monospace;
+    }
+    .btnDE {
+        position: absolute;
+        width: 20%;
+        height: 100%;
+        left: 35%;
+        transform: translate(-50%);
+        background-color: rgb(60, 0, 140);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        color: rgb(226, 226, 226);
+    }
+    .btnEN {
+        position: absolute;
+        width: 20%;
+        height: 100%;
+        left: 65%;
+        transform: translate(-50%);
+        background-color: rgb(60, 0, 140);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        color: rgb(226, 226, 226);
+    }
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0%;
+        width: 15%;
+        height: 100%;
+        background-color: rgb(20, 20, 20); 
+        z-index: 1;      
+    }
+    .sectionList a {
+        text-decoration: none;
+        color: white;
+        position: relative;
+        left: 50%;
+        font-size: 20px;
+        text-align: left;
+    }
+    .sectionList { 
+        list-style: none;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        transform: translate(-50%,-50%);
+        }
+    .sectionList li {
+        padding-left: 20%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .sectionList li:hover {
+        background-color: rgb(60, 0, 140);
+    }
+    .lang {
+        margin-top: 50px;
+    }
+    .socials {
+        position: relative;
+        top: 90%;
+        left: 45%;
+        transform: translate(-50%,-50%);
+    }
+    .socials li {
+        display: inline-block;
+        margin: 10%;
+    }
+    .socialLogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        transition: all 0.2s ease-in-out;
+    }
+    .socialLogo:hover {
+        transform: scale(1.1);
+    }
+    
+    .content {
+        position: absolute;
+        width: 90%;
+        height: 100%;
+        left: 15%;
+        margin-left: 0%;
+    }
+    .headerBox {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 10%;
+        left: 20%;
+        width: 35%;
+        height: 10%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+        font-size: 45px;
+    }
+    /*About me*/
+    .aboutmeSection {
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    .titleBox {
+        position: relative;
+        top: 30%;
+        left: 20%;
+        width: 60%;
+        height: 15%;
+        color: rgb(226, 226, 226);
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+    }
+    .myName {
+        position: relative;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%,-50%);
+        font-size: 49px;
+        
+    }
+    .myDesc {
+        position: absolute;
+        left: 0%;
+        top: 45%;
+    }
+    /*Journey*/
+    .journeySection {
+        position: absolute;
+        display: grid;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    .contentBox {
+        position: absolute;
+        left: 25%;
+        top: 50%;
+        width: 40%;
+        height: 30%;
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+    }
+    .milestones {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 45%;
+        height: 60%;
+        left: 40%;
+        top: 40%;
+    }
+    .milestone {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .milestone h3 {
+        position: absolute;
+        left: 58%;
+        font-size: 25px;
+        color: rgb(226, 226, 226);
+        transform: translate(-50%,-50%);
+    }
+    .headerCircle {
+        bottom: 25%;
+    }
+    .milestoneCircle {
+        position: absolute;
+        border-radius: 50%;
+        width: 80px;
+        height: 30px;
+        border: double blue;
+        background-color: cornflowerblue;
+        left: 50%;
+        transition: all 0.3s;
+    }
+    .milestoneCircle:hover {
+        transform: scale(1.1);
+    }
+    .milestoneContent {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 50%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        transition: all 0.3s;
+        z-index: 0;
+        font-size: 25px;
+    }
+    .milestoneX {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: transparent;
+        top: 5px;
+        right: 5px;
+        transition: all 0.1s;
+        z-index: 0;
+        font-size: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .circle1 {
+        top: 30%;
+    }
+    .circle2 {
+        bottom: 20%;
+    }
+    .circle3 {
+        top: 30%;
+    }
+    .circle4 {
+        bottom: 20%;
+    }
+    .circle5 {
+        top: 30%;
+    }
+    /*Skills*/
+    .skillsSection {
+        position: absolute;
+        display: grid;
+        top: 200%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    .skills {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 50px;
+        column-gap: 0px;
+        width: 90%;
+        height: 80%;
+        left: 5%;
+        top: 30%;
+    }
+    .skill {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 50%;
+        height: 50%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+    }
+    .skill h3 {
+        position: absolute;
+        left: 50%;
+        top: 5%;
+        font-size: 22px;
+        color: rgb(226, 226, 226);
+        transform: translate(-50%,-50%);
+    }
+    .skillLogo {
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%,-50%);
+        height: 70px;
+    }
+    /*Projects*/
+    .projectsSection {
+        position: absolute;
+        top: 300%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    
+    .projects {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 50px;
+        column-gap: 50px;
+        width: 45%;
+        height: 80%;
+        left: 40%;
+        top: 30%;
+    }
+    .project {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+    }
+    .project h3 {
+        position: absolute;
+        left: 50%;
+        top: 0%;
+        font-size: 30px;
+        color: rgb(226, 226, 226);
+        transform: translate(-50%,-50%);
+    }
+    .project img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 70px;
+        height: 70px;
+        transform: translate(-50%,-50%);
+    }
+    .container {
+        position: absolute;
+        left: 50%;
+        top: 86%;
+        transform: translate(-50%,-50%);
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    .btnSnake {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btnTic {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn3 {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn4 {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn5 {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn6 {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1365px) {
+    
+    .headerLang {
+        color: rgb(226, 226, 226);
+        font-family: monospace;
+        font-size: 50px;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%,-50%);
+    }
+    .languages {
+        position: absolute;
+        width: 100%;
+        height: 25%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 40px;
+        font-family: monospace;
+    }
+    .btnDE {
+        position: absolute;
+        width: 20%;
+        height: 100%;
+        left: 35%;
+        transform: translate(-50%);
+        background-color: rgb(60, 0, 140);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        color: rgb(226, 226, 226);
+    }
+    .btnEN {
+        position: absolute;
+        width: 20%;
+        height: 100%;
+        left: 65%;
+        transform: translate(-50%);
+        background-color: rgb(60, 0, 140);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        color: rgb(226, 226, 226);
+    }
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0%;
+        width: 15%;
+        height: 100%;
+        background-color: rgb(20, 20, 20); 
+        z-index: 1;      
+    }
+    .sectionList a {
+        text-decoration: none;
+        color: white;
+        position: relative;
+        left: 50%;
+        font-size: 20px;
+        text-align: left;
+    }
+    .sectionList { 
+        list-style: none;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        transform: translate(-50%,-50%);
+        }
+    .sectionList li {
+        padding-left: 20%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .sectionList li:hover {
+        background-color: rgb(60, 0, 140);
+    }
+    .lang {
+        margin-top: 50px;
+    }
+    .socials {
+        position: relative;
+        top: 90%;
+        left: 45%;
+        transform: translate(-50%,-50%);
+    }
+    .socials li {
+        display: inline-block;
+        margin: 10%;
+    }
+    .socialLogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        transition: all 0.2s ease-in-out;
+    }
+    .socialLogo:hover {
+        transform: scale(1.1);
+    }
+    
+    .content {
+        position: absolute;
+        width: 90%;
+        height: 100%;
+        left: 15%;
+        margin-left: 0%;
+    }
+    .headerBox {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 10%;
+        left: 20%;
+        width: 35%;
+        height: 10%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+        font-size: 42px;
+    }
+    /*About me*/
+    .aboutmeSection {
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    .titleBox {
+        position: relative;
+        top: 30%;
+        left: 20%;
+        width: 60%;
+        height: 15%;
+        color: rgb(226, 226, 226);
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+    }
+    .myName {
+        position: relative;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%,-50%);
+        font-size: 46px;
+        
+    }
+    .myDesc {
+        position: absolute;
+        left: 0%;
+        top: 45%;
+    }
+    /*Journey*/
+    .journeySection {
+        position: absolute;
+        display: grid;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    .contentBox {
+        position: absolute;
+        left: 25%;
+        top: 50%;
+        width: 40%;
+        height: 30%;
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+    }
+    .milestones {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 45%;
+        height: 60%;
+        left: 40%;
+        top: 40%;
+    }
+    .milestone {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .milestone h3 {
+        position: absolute;
+        left: 58%;
+        font-size: 25px;
+        color: rgb(226, 226, 226);
+        transform: translate(-50%,-50%);
+    }
+    .headerCircle {
+        bottom: 25%;
+    }
+    .milestoneCircle {
+        position: absolute;
+        border-radius: 50%;
+        width: 80px;
+        height: 30px;
+        border: double blue;
+        background-color: cornflowerblue;
+        left: 50%;
+        transition: all 0.3s;
+    }
+    .milestoneCircle:hover {
+        transform: scale(1.1);
+    }
+    .milestoneContent {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 50%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transform: translate(-50%,-50%);
+        transition: all 0.3s;
+        z-index: 0;
+        font-size: 20px;
+    }
+    .milestoneX {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: transparent;
+        top: 5px;
+        right: 5px;
+        transition: all 0.1s;
+        z-index: 0;
+        font-size: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .circle1 {
+        top: 30%;
+    }
+    .circle2 {
+        bottom: 20%;
+    }
+    .circle3 {
+        top: 30%;
+    }
+    .circle4 {
+        bottom: 20%;
+    }
+    .circle5 {
+        top: 30%;
+    }
+    /*Skills*/
+    .skillsSection {
+        position: absolute;
+        display: grid;
+        top: 200%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    .skills {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 50px;
+        column-gap: 0px;
+        width: 90%;
+        height: 80%;
+        left: 5%;
+        top: 30%;
+    }
+    .skill {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 50%;
+        height: 50%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+    }
+    .skill h3 {
+        position: absolute;
+        left: 50%;
+        top: 5%;
+        font-size: 22px;
+        color: rgb(226, 226, 226);
+        transform: translate(-50%,-50%);
+    }
+    .skillLogo {
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%,-50%);
+        height: 65px;
+    }
+    /*Projects*/
+    .projectsSection {
+        position: absolute;
+        top: 300%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        color: rgb(226, 226, 226);
+    }
+    
+    .projects {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 50px;
+        column-gap: 50px;
+        width: 45%;
+        height: 80%;
+        left: 40%;
+        top: 30%;
+    }
+    .project {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%;
+        background-color: rgb(60, 0, 140);
+        border-radius: 10px;
+    }
+    .project h3 {
+        position: absolute;
+        left: 50%;
+        top: 0%;
+        font-size: 25px;
+        color: rgb(226, 226, 226);
+        transform: translate(-50%,-50%);
+    }
+    .project img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 70px;
+        height: 70px;
+        transform: translate(-50%,-50%);
+    }
+    .container {
+        position: absolute;
+        left: 50%;
+        top: 86%;
+        transform: translate(-50%,-50%);
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    .btnSnake {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btnTic {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn3 {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn4 {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn5 {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    .btn6 {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+    
 }
 
 /*anchors*/
