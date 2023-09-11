@@ -2807,7 +2807,7 @@ ul {
         position: fixed;
         top: 0;
         left: 0%;
-        width: 15%;
+        width: 13%;
         height: 100%;
         background-color: rgb(20, 20, 20); 
         z-index: 1;      
@@ -2899,7 +2899,7 @@ ul {
         position: relative;
         top: 30%;
         left: 20%;
-        width: 62%;
+        width: 60%;
         height: 15%;
         color: rgb(226, 226, 226);
         background-color: rgb(60, 0, 140);
@@ -2911,7 +2911,7 @@ ul {
         top: 50%;
         left: 55%;
         transform: translate(-50%,-50%);
-        font-size: 60px;
+        font-size: 58px;
         
     }
     .myDesc {
@@ -3223,7 +3223,7 @@ ul {
         position: fixed;
         top: 0;
         left: 0%;
-        width: 15%;
+        width: 13%;
         height: 100%;
         background-color: rgb(20, 20, 20); 
         z-index: 1;      
@@ -3315,7 +3315,7 @@ ul {
         position: relative;
         top: 30%;
         left: 20%;
-        width: 65%;
+        width: 60%;
         height: 15%;
         color: rgb(226, 226, 226);
         background-color: rgb(60, 0, 140);
@@ -3327,7 +3327,7 @@ ul {
         top: 50%;
         left: 55%;
         transform: translate(-50%,-50%);
-        font-size: 60px;
+        font-size: 56px;
         
     }
     .myDesc {
